@@ -1,0 +1,24 @@
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	int a,b;
+
+	clrscr();
+
+	printf("the value of a is:");
+	scanf("%d",&a);
+
+	printf("the value of b is:");
+	scanf("%d",&b);
+
+	b=b+a;
+	a=b-a;
+	b=b-a;
+
+	printf("%d\n",a);
+	printf("%d",b;
+
+}

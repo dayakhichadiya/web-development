@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	char a;
+	int u,l;
+	clrscr();
+
+	printf("enter alphabet:");
+	scanf("%c",&a);
+
+	if(a>=65 && a<=90){
+	l=a+32;
+	printf("%c in lower case",l);
+	}
+	else if(a>=97 && a<=122){
+	u=a-32;
+	printf("%c in  upper case",u);
+	}
+}

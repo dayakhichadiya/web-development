@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+	char A;
+	int i;
+
+
+	clrscr;
+	for(i=;i<=;i++){
+	printf("%c",i);
+	}
+}
