@@ -1,0 +1,93 @@
+a:link{
+    color: rgb(255, 0, 149);
+}
+
+a:visited{ 
+    color:blueviolet ;
+}
+
+a:hover{
+    color: gold;
+    background-color: black;
+}
+
+a:active{
+    color: darkgreen;
+}
+
+/* first child pseudo class */
+
+/* p:first-child{
+    color: red;
+} */
+
+/* last-child pseudo class */
+
+/* p:last-child{
+    color: goldenrod;
+} */
+
+/* :root{
+    color: blue;
+} */
+
+/* :nth-child(3){
+    color:green;
+} */
+
+/* p:nth-child(odd){
+    color: aqua;
+} */
+
+/* :nth-child(even){
+    color: green;
+} */
+
+.btn{
+    color: blue;
+    background-color: cornflowerblue;
+    border-radius: 20px;
+}
+.btn:hover{
+    color: green;
+    background-color: white;
+}
+.btn:visited{
+    color: blueviolet;
+}
+.btn:active{
+    color: chartreuse;
+}
+.btn:link{
+    color:gold;
+}
+/* 
+input:focus{
+    background-color: red;
+}
+
+input:in-range{
+    border: 4px solid green;
+} */
+
+input:invalid{
+    border: 2px dashed yellow;
+}
+
+p:lang(it){
+    background-color: pink;
+}
+/* p{
+    color: green;
+}
+:not(p){
+    color: violet;
+ } */
+
+/*input:out-of-range{
+    border: 2px solid blueviolet;
+} */
+
+input:required{
+    background-color: aqua;
+}

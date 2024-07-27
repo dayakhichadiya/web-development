@@ -1,0 +1,20 @@
+/* Css Flex Properties */
+
+/* flex-basis , flex-grow , flex-shrink *//* long hand */
+/* flex:grow , shrink , basis; *//* Sort hand Props */
+
+.maindiv {
+    max-width: 1200px;
+    border: 2px solid green;
+    display: flex;
+}
+
+.maindiv div{
+    border: 2px solid yellow;
+    /* flex-grow: 2; */
+    flex-basis: 200px;
+}
+.maindiv div:nth-child(1){
+    flex-shrink: 10;
+    flex-grow: 3;
+}

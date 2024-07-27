@@ -1,0 +1,32 @@
+body{
+    background-color: sandybrown;
+}
+.header a{
+    text-decoration: none;
+    color: black;
+    padding: 70px;
+    font-size: 20px;
+}
+
+.header a:hover{
+    color:snow;
+}
+.img{
+    background-image: url('https://images.ctfassets.net/hrltx12pl8hq/3Z1N8LpxtXNQhBD5EnIg8X/975e2497dc598bb64fde390592ae1133/spring-images-min.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 400px;
+    position: relative;
+    left: 30%;
+    background-position: center;
+    background-size: contain;
+}
+footer{
+    background-color: rgb(217, 225, 231);
+    height: 40px; 
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+}

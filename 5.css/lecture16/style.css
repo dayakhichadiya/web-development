@@ -1,0 +1,51 @@
+
+/* object-fit properties 
+
+    1.scale-down
+    2.fill
+    3.cover
+    4.contain */
+
+/* img{ */
+    /* height: 500px;
+    width: 500px; */
+    /* object-fit: contain; */
+    /* object-fit: cover; */
+    /* object-fit: fill; */
+    /* object-fit: scale-down; */
+
+    /* object-position: top;  */
+
+/* } */
+
+/* overlay property */
+
+.overlay-section{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-section img{
+    object-fit: cover;
+    object-position: right;
+    position: absolute;
+   
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+.overlay-section:hover img{
+    filter:blur(5px);
+}
+.overlay-section:hover .overlay-text {
+    height: 100%;
+    color:white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}

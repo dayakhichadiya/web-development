@@ -1,0 +1,39 @@
+/*
+ Animation-name
+ Animation-direction
+ Animation-duration
+ Animation-delay
+ Animation-iteration-count
+ Animation-play-state
+ Animation-@keyframes
+ Animation-timing-functions
+ Animation-fillmode
+*/
+
+.box{
+    border: 2px solid palevioletred;
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+
+    animation-name: box;
+    animation-direction: alternate;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes box{
+    0%{
+        transform: translate(0px);
+    }
+    100%{
+        transform: translate(1500px);
+
+    }
+}
+

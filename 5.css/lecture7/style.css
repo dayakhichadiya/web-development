@@ -1,0 +1,47 @@
+
+/* box-shadow */
+
+.shadow{
+    width: 50%;
+    box-shadow: 2px 2px 3px 5px green inset;
+    min-width: 50%;
+}
+
+/* width and height */
+.min{
+    /* width: 100%; */
+    min-width: 50%;
+    min-height: 100%;
+}
+
+/* list styles */
+
+#list{
+    list-style-type: lower-greek ;
+}
+#list{
+    border: 2px solid black;
+    list-style-position: inside;
+}
+#list{
+    list-style-image: url("icon.svg");
+}
+
+/* background clip = background color and origin = background image */
+.clip{
+    border: 5px dashed black;
+    padding: 15px;
+    background-color:aqua ;
+    background-clip: content-box;
+}
+
+.origin{
+    border: 3px dotted black;
+    width: 30%;
+    height: 50px;
+    padding: 25px;
+    background-image: url("icon.svg");
+    background-repeat: no-repeat;
+    background-color:aqua ;
+    background-origin: content-box;
+}

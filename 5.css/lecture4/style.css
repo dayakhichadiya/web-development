@@ -1,0 +1,72 @@
+/* font properties */
+
+.font-size{
+    font-size: larger;
+}
+
+.font-style{
+    font-style: italic;
+}
+
+.font-varient{
+    font-variant: small-caps;
+}
+
+.font-family{
+    font-family: cursive;
+}
+
+.font-weight{
+    font-weight: 700;
+}
+
+/* text properties */
+
+.text-color{
+    color: chocolate;
+}
+
+.text-align{
+    text-align: center;
+}
+
+.text-decoration{
+    text-decoration: overline;
+}
+
+.text-tranformation{
+    text-transform: uppercase;
+}
+
+.text-shadow{
+    text-shadow: 2px 2px 4px blue;
+}
+
+/* margin, padding and visibility*/
+
+.box{
+    margin: 10px;
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color:blue ;
+    margin: 25px 50px;
+  
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color:lightsalmon ;
+    margin: 35px;
+    padding: 20px;
+    visibility: visible;
+}
+
+.white_space{
+    background-color: aqua;
+    white-space: unset;
+}

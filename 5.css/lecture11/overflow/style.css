@@ -1,0 +1,22 @@
+/* .visible{
+    overflow: visible;
+    width: 200px;
+    height: 200px;
+} */
+/* .visible{
+    border: 4px solid goldenrod;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+} */
+/* .visible{
+    overflow: scroll;
+    width: 200px;
+    height: 200px;
+} */
+.visible{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 200px;
+    height: 200px;
+}

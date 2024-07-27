@@ -1,0 +1,15 @@
+
+#border-box{
+    box-sizing: content-box;
+    border: 10px solid darkgoldenrod;
+    width: 300px;
+    height: 100px;
+    padding: 30px;
+}
+#content-box{
+    box-sizing: content-box;
+    border: 10px solid darkgoldenrod;
+    width: 300px;
+    height: 100px;
+    padding: 30px;
+}

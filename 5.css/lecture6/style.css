@@ -1,0 +1,34 @@
+.element::first-line{
+    color: blue; 
+} 
+ 
+.element::first-letter{
+    font-size: 25px;
+    color: red ;
+} 
+
+.element::selection{
+    color: lightcoral;
+    background-color: darkgreen;
+}
+.element::before{
+    content: '**';
+    color: blue ;
+}
+
+.element::after{
+    content: '**';
+    color: blue ;
+}
+
+/* background-properties */
+.img{
+    width: 100%;
+    height: 40vh;
+    background-image: url("purple.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-position-x: left;
+    background-size: contain;
+}

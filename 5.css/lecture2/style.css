@@ -1,0 +1,39 @@
+/* cascade style 
+     1. inline style
+     2. internal style
+     3. external style
+
+    specifity == which style applied first
+     1. inline style 
+     2. #id 
+     3. .class
+     4. element name*/
+h1{
+    color: aqua;
+}
+
+/* #my-id{
+    color: chartreuse;
+} */
+
+.my-class{
+    color: brown;
+}
+
+h2{
+    color: darkgreen;
+}
+
+.myName{
+
+    color: aquamarine;
+    background-color: blue;
+
+}
+
+h1{
+    color: gold;
+}
+h1{
+    color:cadetblue;
+}

@@ -1,0 +1,40 @@
+.main_grid{
+    /* background-color: burlywood; */
+    /* border: 2px solid black; */
+    height: 350px;
+    width: 500px;
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    
+}
+.grid_items{
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+   
+
+}
+.item1{
+    background-image: url('https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?size=338&ext=jpg&ga=GA1.1.1413502914.1719878400&semt=sph');
+    
+}
+.item2{
+    background-image: url('https://images.unsplash.com/photo-1545231027-637d2f6210f8?fm=jpg&w=3000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bG9nb3xlbnwwfHwwfHx8MA%3D%3D');
+
+}
+.item3{
+    background-image: url('https://images.pexels.com/photos/8714493/pexels-photo-8714493.jpeg?auto=compress&cs=tinysrgb&w=600')
+
+}
+.item4{
+    background-image: url('https://images.pexels.com/photos/1267702/pexels-photo-1267702.jpeg?auto=compress&cs=tinysrgb&w=600')
+}
+.item5{
+    background-image: url('https://images.pexels.com/photos/3158136/pexels-photo-3158136.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+.item6{
+    background-image: url('https://images.pexels.com/photos/2814832/pexels-photo-2814832.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
