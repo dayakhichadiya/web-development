@@ -7,7 +7,8 @@
 }
 body{
     background-color: #4833cf;
-    color: white;    
+    color: white; 
+    margin-left: 40px;   
 }
 .main-container{
     max-width: 1399px;
@@ -15,19 +16,21 @@ body{
 
 }
 .navbar{
+    display: flex;
     border: 2px solid black;
     margin-top: 30px;
-    background-color: white;
-    margin-right:117px ;
+    // background-color: white;
+    margin-right:130px ;
 
-    
-
+    span{
+        font-size: 20px;
+        color: white;
+        align-items: center;
+        margin-block: 30px;
+    }
     .container {
         display: $flex;
         background-color: white;
-
-       
-       
     }
 
     nav  {
@@ -37,24 +40,25 @@ body{
         margin-top: 15px;
         margin-left: 96px;
 
-        span i{
-            font-size: 18px;
-            color: black;
-        }
+
+        // span i{
+        //     font-size: 18px;
+        //     color: black;
+        // }
     }
 
     nav ul{
         display: flex;
+
         // align-items: center;
     }
 
     ul li {
         list-style-type: none;
         margin-right: 20px;
-        padding: 10px;
+        padding: 18px;
         font-size: 20px;
-        font-weight: 900px;
-      
+        font-weight: 900px;  
 
     }
 
@@ -62,6 +66,7 @@ body{
         display: flex;
         text-decoration: none;
         color: black;
+        text-align: right;
         justify-content: space-between;
     
         a img{
@@ -74,16 +79,60 @@ body{
 }
 
 .hero-sec{
-    border: 2px solid black;
-    margin-top:10px;
-    margin-left: 67px;
+    // border: 2px solid black;
+    margin-top:20px;
+    margin-left: 120px;
     display: flex;
     
+    .text-sec{
+    max-width: 800px;
+    margin-left: 50px ;
+    margin-top: 120px ;
+    font-family: "Poppins", sans-serif;
+    // font-weight: normal;
+}
     .text-sec h4{
         font-size: 60px;
         font-weight: normal;
         margin-bottom: 10px;
         margin-top: 50px;
+        line-height: 72px;
+    }
+
+    .text-sec h2{
+        font-size: 59px;
+        text-align: left;
+        margin-block: 10px ;
+        line-height: 70.2px;
 
     }
+
+    .text-sec h5{
+        font-size: 18px;
+        line-height: 25px;
+        margin-block: 30px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        max-width: 500px;
+
+    }   
+
+    a button{
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.5px;
+        padding: 12px 22px;
+        border-radius: 50px;
+        margin-block: 10px;
+        font-weight: 400;
+        border: none;
+        
+    }
+}
+
+// 162px//
+
+.about-sec{
+    background-color: white;
 }

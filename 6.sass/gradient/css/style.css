@@ -7,45 +7,106 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #4833cf;
+  color: white;
+  margin-left: 40px;
 }
 
 .main-container {
   max-width: 1399px;
   margin: auto;
 }
-.main-container .navbar {
-  border: 2px solid black;
-}
-.main-container .navbar .container .header {
+
+.navbar {
   display: flex;
+  border: 2px solid black;
+  margin-top: 30px;
+  margin-right: 130px;
 }
-.main-container .navbar nav {
+.navbar span {
+  font-size: 20px;
+  color: white;
+  align-items: center;
+  margin-block: 30px;
+}
+.navbar .container {
+  display: flex;
+  background-color: white;
+}
+.navbar nav {
   display: flex;
   align-items: center;
-  border: 2px solid green;
   margin-top: 15px;
   margin-left: 96px;
 }
-.main-container .navbar nav ul {
+.navbar nav ul {
   display: flex;
-  align-items: center;
 }
-.main-container .navbar ul li {
+.navbar ul li {
   list-style-type: none;
   margin-right: 20px;
-  padding: 10px;
+  padding: 18px;
   font-size: 20px;
-  justify-content: space-between;
   font-weight: 900px;
 }
-.main-container .navbar nav ul li a {
+.navbar nav ul li a {
   display: flex;
   text-decoration: none;
   color: black;
+  text-align: right;
+  justify-content: space-between;
 }
-.main-container .navbar nav a img {
+.navbar nav ul li a a img {
   height: 50px;
   margin-left: 20px;
   display: flex;
+  vertical-align: center;
+}
+
+.hero-sec {
+  margin-top: 20px;
+  margin-left: 120px;
+  display: flex;
+}
+.hero-sec .text-sec {
+  max-width: 800px;
+  margin-left: 50px;
+  margin-top: 120px;
+  font-family: "Poppins", sans-serif;
+}
+.hero-sec .text-sec h4 {
+  font-size: 60px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  line-height: 72px;
+}
+.hero-sec .text-sec h2 {
+  font-size: 59px;
+  text-align: left;
+  margin-block: 10px;
+  line-height: 70.2px;
+}
+.hero-sec .text-sec h5 {
+  font-size: 18px;
+  line-height: 25px;
+  margin-block: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 500px;
+}
+.hero-sec a button {
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  padding: 12px 22px;
+  border-radius: 50px;
+  margin-block: 10px;
+  font-weight: 400;
+  border: none;
+}
+
+.about-sec {
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */
