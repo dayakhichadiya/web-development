@@ -150,7 +150,7 @@ ul {
 // }
 
 .hero-sec{
-    border: 2px solid black;
+    // border: 2px solid black;
     margin-top:20px;
     // background-color: #4833cf;
     margin-left: 120px;
@@ -158,7 +158,7 @@ ul {
     
     .text-sec{
     max-width: 800px;
-    border: 2px solid black;
+    // border: 2px solid black;
     margin-left: 50px ;
     margin-top: 120px ;
     font-family: "Poppins", sans-serif;
@@ -211,10 +211,12 @@ ul {
     color: black;
     display: flex;
     margin-top: 120px;
-    
+    margin-left: 120px;
+
     .heading-text {
-        border: 2px solid black;
-        max-width: 600px;
+        // border: 2px solid black;
+        max-width: 50%;
+        margin-right: 10px;
     }
         h2{
         color: #0a69de;
@@ -232,15 +234,15 @@ ul {
     }
 
     .para-text {
-        border: 2px solid black;
+        // border: 2px solid black;
         max-width: 600px;
     }
         h6{
-        font-size: 18px;
+        font-size: 15px;
         font-family: "roboto", sans-serif;
         font-weight: 400;
         color: #1f1f1f;
-        padding-top: 30px;
+        padding-top: 80px;
         line-height: 24px;
 
     }
@@ -287,5 +289,6 @@ ul {
 
   .about-img{
     margin-top: 120px;
-    margin-left: 160px;
+    margin:auto;
+    padding: 20px;
   }
