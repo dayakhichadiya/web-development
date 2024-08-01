@@ -33,36 +33,75 @@ ul {
 /* header start */
 /* navbar start */
 .bg-sec{
-    max-width: 1400px;
+    max-width: 1499px;
     // background-color: #4833cf;
 }
 .container {
-    max-width: calc(100vw - 10vw);
-    margin: 0 auto;
+    // max-width: calc(100vw - 10vw);
+    // margin: 0 auto;
     // border: 2px solid black; 
+    // background-color: #4534ce;
 }
-
+.header{
+    background-color: #4534ce;
+    max-width: 100%;
+    padding-top: 15px;
+}
+.bar span i {
+    // background-color: #0a69de;
+    display:inline;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 90px;
+}
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0px;
+    padding: 15px 0px;
     margin-bottom: 30px;
-    // background-color:#4833cf ;
+    background-color:#fff ;
+    margin-left: 111px;
+    margin-right: 197px;
 
+    .logo{
+        // background-color: #0a69de;
+        // color: #fff;
+        font-size: 24px;
+        margin-left: 15px;
+        // padding-left: 15px;
+    }
+    .nav_items{
+
+    }
     .nav_items nav ul {
     display: flex;
+    margin:0 46px;
+
+
 }
 
     .nav_items nav ul li a {
     padding: 20px 30px;
-    /* font-size: 18px; */
+    font-size: 15px; 
     font-weight: bold;
-    color: rgba(0, 0, 0, 0.735)
+    color: rgba(0, 0, 0, 0.735);
+    // margin-left: 110px;
+
+    &:hover{
+        color:#4833cf
+    }
 }
 
     nav ul li #button{
         background-color: #0a69de;
+        color: #fff;
+        // margin-right: 0px;
+        
+        &:hover{
+            background-color: #1f1f1f;
+        }
     }
 
    nav ul span i{
@@ -71,10 +110,11 @@ ul {
         font-size: 15px;
 
     }
-.social-icon{
-    // display: flex;
 }
+.social-icons{
+    display: flex;
 }
+
 
 // body{
 //     background-color: #4833cf;
@@ -163,6 +203,7 @@ ul {
     margin-top: 120px ;
     font-family: "Poppins", sans-serif;
     // font-weight: normal;
+    color:#fff;
 }
     .text-sec h4{
         font-size: 60px;
@@ -204,7 +245,7 @@ ul {
     }
 }
 
-// 162px//
+// about section //
 
 .about-sec{
     background-color: white;
@@ -248,13 +289,19 @@ ul {
     }
 }
 
+
+// card section//
+
+
 .card-sec {
     display: flex;
     gap: 2rem;
     padding: 32px;
-    border: 2px solid #ff0000;
+    // border: 2px solid #ff0000;
     margin-top: 120px;
-    // margin-left: ;
+    margin-left: 105px;
+    margin-right: 50px;
+    
     
   }
   
@@ -290,5 +337,6 @@ ul {
   .about-img{
     margin-top: 120px;
     margin:auto;
-    padding: 20px;
+    padding: 120px;
+    margin-left: 190px;
   }
