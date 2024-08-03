@@ -7,8 +7,8 @@ module.exports = {
   plugins: [],
 
   screens: {
-    sm: '600px',
-    md: '768px',
+    sm: '400px',
+    md: '600px',
     lg: '1199px',
     xl: '1440px',
   },
