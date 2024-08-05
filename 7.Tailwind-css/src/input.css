@@ -7,3 +7,13 @@
 .btn{
     @apply py-3 px-3.5 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600  transition-all text-sm
   }
+  
+@layer base {
+    h1 {
+      @apply text-2xl;
+    }
+
+    /* a {
+      @apply text-blue-600 underline;
+    } */
+  }
