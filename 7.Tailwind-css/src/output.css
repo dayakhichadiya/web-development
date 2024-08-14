@@ -601,12 +601,36 @@ h1 {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
 
 .inset-0 {
   inset: 0px;
+}
+
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.left-4 {
+  left: 1rem;
+}
+
+.left-72 {
+  left: 18rem;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .isolate {
@@ -706,6 +730,30 @@ h1 {
   margin-top: 15%;
 }
 
+.ml-60 {
+  margin-left: 15rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mt-\[50\%\] {
+  margin-top: 50%;
+}
+
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
+.mt-\[200px\] {
+  margin-top: 200px;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -728,11 +776,6 @@ h1 {
 
 .aspect-\[16\/9\] {
   aspect-ratio: 16/9;
-}
-
-.size-7 {
-  width: 1.75rem;
-  height: 1.75rem;
 }
 
 .size-28 {
@@ -768,8 +811,20 @@ h1 {
   height: 2.25rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-lvh {
   height: 100lvh;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-96 {
+  height: 24rem;
 }
 
 .max-h-60 {
@@ -816,6 +871,50 @@ h1 {
   width: 100lvw;
 }
 
+.w-\[320px\] {
+  width: 320px;
+}
+
+.w-\[220px\] {
+  width: 220px;
+}
+
+.w-\[420px\] {
+  width: 420px;
+}
+
+.w-\[520px\] {
+  width: 520px;
+}
+
+.w-\[550px\] {
+  width: 550px;
+}
+
+.w-\[600px\] {
+  width: 600px;
+}
+
+.w-\[580px\] {
+  width: 580px;
+}
+
+.w-\[570px\] {
+  width: 570px;
+}
+
+.w-\[560px\] {
+  width: 560px;
+}
+
+.w-\[565px\] {
+  width: 565px;
+}
+
+.w-\[575px\] {
+  width: 575px;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -826,10 +925,6 @@ h1 {
 
 .max-w-md {
   max-width: 28rem;
-}
-
-.max-w-80 {
-  max-width: 20rem;
 }
 
 .max-w-screen-md {
@@ -915,6 +1010,14 @@ h1 {
   flex-direction: column;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -935,12 +1038,20 @@ h1 {
   row-gap: 1rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
 
 .rounded-2xl {
   border-radius: 1rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .rounded-lg {
@@ -955,8 +1066,8 @@ h1 {
   border-radius: 0.75rem;
 }
 
-.rounded-full {
-  border-radius: 9999px;
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
 .border {
@@ -969,6 +1080,14 @@ h1 {
 
 .border-4 {
   border-width: 4px;
+}
+
+.border-8 {
+  border-width: 8px;
+}
+
+.border-solid {
+  border-style: solid;
 }
 
 .border-dashed {
@@ -1012,6 +1131,10 @@ h1 {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.bg-black\/75 {
+  background-color: rgb(0 0 0 / 0.75);
 }
 
 .bg-blue-500 {
@@ -1094,9 +1217,50 @@ h1 {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-black\/10 {
+  background-color: rgb(0 0 0 / 0.1);
+}
+
+.bg-black\/15 {
+  background-color: rgb(0 0 0 / 0.15);
+}
+
+.bg-black\/50 {
+  background-color: rgb(0 0 0 / 0.5);
+}
+
+.bg-white\/50 {
+  background-color: rgb(255 255 255 / 0.5);
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
 .bg-gray-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-40 {
@@ -1155,6 +1319,21 @@ h1 {
      object-fit: cover;
 }
 
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.object-scale-down {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
+
 .p-0 {
   padding: 0px;
 }
@@ -1181,6 +1360,10 @@ h1 {
 
 .p-9 {
   padding: 2.25rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-12 {
@@ -1227,16 +1410,16 @@ h1 {
   text-align: center;
 }
 
+.text-start {
+  text-align: start;
+}
+
 .align-middle {
   vertical-align: middle;
 }
 
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-2xl {
@@ -1252,6 +1435,11 @@ h1 {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-\[18px\] {
@@ -1283,6 +1471,14 @@ h1 {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .text-blue-500 {
@@ -1320,6 +1516,11 @@ h1 {
   color: rgb(99 102 241 / var(--tw-text-opacity));
 }
 
+.text-red-300 {
+  --tw-text-opacity: 1;
+  color: rgb(252 165 165 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1330,9 +1531,9 @@ h1 {
   color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
-.text-red-300 {
+.text-black {
   --tw-text-opacity: 1;
-  color: rgb(252 165 165 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .decoration-2 {
