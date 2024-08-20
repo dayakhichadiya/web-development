@@ -751,12 +751,24 @@ h1 {
   margin-top: 200px;
 }
 
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
 
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -798,11 +810,6 @@ h1 {
 .size-8 {
   width: 2rem;
   height: 2rem;
-}
-
-.size-12 {
-  width: 3rem;
-  height: 3rem;
 }
 
 .h-12 {
@@ -925,14 +932,6 @@ h1 {
   width: 100lvw;
 }
 
-.w-80 {
-  width: 20rem;
-}
-
-.w-\[350px\] {
-  width: 350px;
-}
-
 .max-w-5xl {
   max-width: 64rem;
 }
@@ -961,10 +960,6 @@ h1 {
   max-width: 768px;
 }
 
-.max-w-full {
-  max-width: 100%;
-}
-
 .flex-auto {
   flex: 1 1 auto;
 }
@@ -987,12 +982,6 @@ h1 {
 
 .border-collapse {
   border-collapse: collapse;
-}
-
-.border-spacing-5 {
-  --tw-border-spacing-x: 1.25rem;
-  --tw-border-spacing-y: 1.25rem;
-  border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
 }
 
 @keyframes bounce {
@@ -1054,6 +1043,10 @@ h1 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
@@ -1086,16 +1079,16 @@ h1 {
   justify-content: space-between;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-8 {
   gap: 2rem;
 }
 
 .gap-y-4 {
   row-gap: 1rem;
-}
-
-.gap-y-8 {
-  row-gap: 2rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1198,11 +1191,6 @@ h1 {
   border-color: rgb(129 140 248 / var(--tw-border-opacity));
 }
 
-.border-purple-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(192 132 252 / var(--tw-border-opacity));
-}
-
 .border-purple-500 {
   --tw-border-opacity: 1;
   border-color: rgb(168 85 247 / var(--tw-border-opacity));
@@ -1240,11 +1228,6 @@ h1 {
 .bg-blue-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-gray-200 {
@@ -1777,6 +1760,10 @@ h1 {
 }
 
 @media (min-width: 640px) {
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .sm\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1797,6 +1784,10 @@ h1 {
 
   .sm\:text-left {
     text-align: left;
+  }
+
+  .sm\:text-center {
+    text-align: center;
   }
 }
 
@@ -1821,8 +1812,8 @@ h1 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .md\:p-7 {
-    padding: 1.75rem;
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 
