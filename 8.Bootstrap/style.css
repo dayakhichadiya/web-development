@@ -1,0 +1,13 @@
+.col-3{
+    border:2px solid black;
+    border-radius:8px;
+}
+.col-3 img{
+    width:100%;
+    height:auto;
+    padding:4px;
+
+}
+.row{
+    /* border:2px solid green; */
+}
