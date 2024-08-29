@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="java.js"></script>
+</head>
+<body>
+    
+    <h1 id="demo"></h1>
+
+    <h2>demo in body section</h2>
+
+    <p id="demo">A paragraph.</p>
+    <p id="demp1">This is para</p>
+    <p id="new">another</p>
+
+    <button type="button" onclick="newfun()">new here</button>
+    <button type="button" onclick="myfun()">Try it </button>
+    <h2>window print() method</h2>
+    <button type="button" onclick="window.print()">print this page</button>
+<script>
+    document.getElementById("demo").style.fontSize="40px";
+</script>
+    <script>
+        function myfun(){
+            document.getElementById("demo").innerHTML="changed paragraph.";
+            document.getElementById("demp1").innerHTML="function paragraph.";
+        }
+        function newfun(){
+            document.getElementById("new").innerHTML="efforts.";
+        }
+    </script>
+
+
+</body>
+</html>
