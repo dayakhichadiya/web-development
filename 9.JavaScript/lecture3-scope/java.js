@@ -2,6 +2,8 @@
 
 // var keyword//
 
+document.getElementById('demo').innerHTML='hello moto !!!!!'
+
 var item1 = "first"
 
 console.log(item1);
@@ -74,3 +76,51 @@ console.log(i2);
 // Hoisting
 
 // hoisting //
+{
+    
+    a1 = 10;
+    a2 = 40;
+    a3 = 20;
+    
+    // output is undefined  if we cannot assign the value//
+    console.log(a1);
+    console.log(a2);
+    console.log(a3);
+    var a1 , a2 , a3 ;
+}
+
+
+// let 
+
+{
+
+    // x1 = 12;
+    // x2 = 13;
+    // x3 = 14;
+    
+    let x1 , x2 , x3 ;   // it shows the reference error //  Cannot access 'x1' before initialization
+    
+    x1 = 12;
+    x2 = 13;
+    x3 = 14;
+
+    console.log(x1);
+    console.log(x2);
+    console.log(x3);
+}
+
+// const 
+
+{
+    const x = 11 ;
+    const y = 44 ;
+    const z = 55 ;
+
+    console.log(x);
+    console.log(y);
+    console.log(z);
+    
+    // const x = 33;  // it shows the reference error //  Cannot access 'x' before initialization
+    // const y = 44 ;
+    // const z = 55 ;
+}
