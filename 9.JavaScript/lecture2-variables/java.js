@@ -24,7 +24,7 @@ console.log(10+20);
 
 1.String
 2.Number
-3.Bloolean
+3.Boolean
 4.Bigint
 5.undefined
 6.null
