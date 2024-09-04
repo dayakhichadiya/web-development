@@ -11,3 +11,37 @@
 // 9.string operator
 
 
+// Arithmwtic operator
+
+{
+    // let a = 5;
+    // let b = 4;
+
+    // console.log(a + b);
+    // console.log(a - b);
+    // console.log(a * b);
+    // console.log(a / b);
+    // console.log(a % b);
+    // console.log(a + b);
+    // console.log(a - b);
+}
+
+
+// Assognment operator
+{
+    let x = 4;
+    let y = 8;
+    let z ;
+
+    console.log(z = x+=y);
+    console.log(z = x-=y);
+    console.log(z = x*=y);
+    console.log(z = x/=y);
+    console.log(z = x%=y);
+    console.log(x ** y);
+
+
+}
+
+
+
