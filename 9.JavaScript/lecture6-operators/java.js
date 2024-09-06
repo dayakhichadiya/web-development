@@ -106,7 +106,85 @@
     let a = 'on ';
     let b = 'off';
 
-    console.log(true ?  a : b); //on
+    console.log(true ? a : b); //on
     console.log(false ? a : b); //off
 }
+
+// Bitwise operator
+
+/* 
+1. AND operator ( & ) (A & B)
+{
+    A   B    Output
+
+    0   0     0
+    0   1     0
+    1   0     0
+    1   1     1
+}
+
+2. OR operator ( | )  (A | B)
+
+{
+    A   B     output
+
+    0   0     0
+    0   1     1
+    1   0     1
+    1   1     1
+
+}
+
+3. XOR operator (A ^ B)
+
+{
+    A   B     output
+
+    0   0     0
+    0   1     1
+    1   0     1
+    1   1     0
+
+}
+ 
+4. NOT operator (~)
+
+{
+    A     output (~A)
+
+    0      1
+    1      0
+    
+}
+    */
+
+
+//    @keyframes dot-selected { 
+//        0%, 100% {
+//          scale: .75;
+//        }
+//        50% {
+//          scale: 1;
+//          background: var(--text-2);
+//        }
+//      }
+
+
+// @keyframes spin {
+//     to {
+//       transform: rotateY(5turn);
+//     }
+//   }
+  
+//   @media (prefers-reduced-motion: no-preference) {
+//     div {
+//       animation: spin 5s ease infinite;
+
+
+//https://tympanus.net/codrops/2024/01/17/a-practical-introduction-to-scroll-driven-animations-with-css-scroll-and-view/
+
+// https://www.sliderrevolution.com/resources/css-animations-on-scroll/
+//https://www.sliderrevolution.com/resources/css-animations-on-scroll/
+//     }
+//   }
 
