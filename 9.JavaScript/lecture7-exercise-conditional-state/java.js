@@ -1,44 +1,87 @@
-// 1.Add two numbers input by the user
+// Loop & Conditional statements excercise
+
+// 1. Write a program that calculates the sum of all numbers from 1 to 100.
 
 {
-    let num1 = 10;
-    let num2 = 5;
+    let sum = 0;
 
-    let sum = num1 + num2 ; 
-
-    console.log('sum is',sum);
+    for (let i = 1; i <= 100; i++) {
+        sum += i;
+    }
+    console.log(sum);
 }
 
-// 2.Calculate the area of a rectangle
+// 2. Write a program that prints the multiplication table of a given number (for example, 5).
 
 {
-    let width = 6;
-    let height = 4;
+    let num = 5;
 
-    let total = width * height;
-    
-    console.log('area of rectangle is',total)
+    for (let i = 1; i <= 10; i++) {
+        console.log(num, i, num * i);
+    }
 }
 
-// 3.Convert temperature from Celsius to Fahrenheit
+// 3. Write a program that calculates the factorial of a given number (for example, 5!) [-- 5*4*3*2*1]
 
 {
-    let celsius = 55;
+    let num = 5;
 
-    let fahrenheit = (celsius * 1.8) + 32;
-
-    console.log('the fahrenheit temperature is ',fahrenheit)
+    if (num == 0) {
+        console.log(`the factorial of ${num} is 1`);
+    } else {
+        let factorial = 1;
+        for (i = 1; i <= num; i++) {
+            factorial *= i; 
+        }
+        console.log(`The factorial of ${num} is ${factorial}.`);
+    }
 }
 
+// 4. Write a program that prints the first 10 numbers in the Fibonacci sequence
 
-// {
-//     const celsius = prompt ("Enter a celsius value: ");
+{
+    let num = 10;
+    let n1 = 0, n2 = 1, nextnum;
 
-//     const fahrenheit = (celsius * 1.8) + 32;
+    for( let i=1; i<=num; i++){
+        console.log(n1); // 0
+        nextnum = n1 + n2; // 0+ 1
+        n1 = n2; // 0 = 1;
+        n2 = nextnum; //1 + 2 =3
+    }
+}
 
-//     console.log(`${celsius} celsius is ${fahrenheit} degree`);
-// }
+// 5. Write a program that reverses a given string.
 
-// 4.Find the remainder when one number is divided by another
+{
+    //  let array= [20];
 
-// 5.Calculate the power of a number
+    //  let str1 = 0;
+    //  let str2 = 0;
+
+    // //  let newstr = 'hello';
+    // let newstr = prompt("enter a string");
+     
+    //  for(str1 = 0; array[str1]!='\0';str1++){
+    //  }
+    //  for(str2 = str1; str2 >= 0; str2--){
+    //     console.log(array[str2]);
+    //  }
+
+
+}
+// 6. Write a program that calculates the sum of all elements in an array.
+
+{
+    let array = [2, 4, 6,];
+    let total = 0;
+
+    for(let i=0; i<array; i++){
+        total += array[i];
+    }
+    console.log(array[i]);
+}
+// 7. Write a program that finds the largest number in an array.
+
+
+// 8. Write a program that counts the number of vowels in a given string.
