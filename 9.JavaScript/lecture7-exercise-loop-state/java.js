@@ -1,12 +1,21 @@
 // 1.Add two numbers input by the user
 
 {
-    let num1 = 10;
-    let num2 = 5;
+    // let num1 = prompt("Enter first number:");
+    // let num2 = prompt("enter second number:");
 
-    let sum = num1 + num2;
+    // // let sum = num1 + num2;
 
-    console.log('sum is', sum);
+    // console.log('sum is', num1 + num2);
+
+    {
+        let num1 = 10;
+        let num2 = 5;
+    
+        let sum = num1 + num2;
+    
+        console.log('sum is', sum);
+    }
 }
 
 // 2.Calculate the area of a rectangle
@@ -60,7 +69,7 @@
     for (let i = 0; i < power; i++) {
         total = total * num;
     }
-    console.log(total);
+    console.log('the power of number is',total);
 }
 
 // 6.Combination of Arithmetic Operators

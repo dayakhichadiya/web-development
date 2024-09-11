@@ -25,11 +25,12 @@
 
 {
     let num = 5;
+    let factorial = 1;
+
 
     if (num == 0) {
         console.log(`the factorial of ${num} is 1`);
     } else {
-        let factorial = 1;
         for (i = 1; i <= num; i++) {
             factorial *= i; 
         }
@@ -54,34 +55,54 @@
 // 5. Write a program that reverses a given string.
 
 {
-    //  let array= [20];
+    let string = 'hello';
+    let rev = '';
 
-    //  let str1 = 0;
-    //  let str2 = 0;
-
-    // //  let newstr = 'hello';
-    // let newstr = prompt("enter a string");
-     
-    //  for(str1 = 0; array[str1]!='\0';str1++){
-    //  }
-    //  for(str2 = str1; str2 >= 0; str2--){
-    //     console.log(array[str2]);
-    //  }
-
-
+    for(let i = string.length - 1; i>=0; i--){
+        rev += string[i];
+    }
+    console.log(rev);
+  
 }
-// 6. Write a program that calculates the sum of all elements in an array.
 
+
+// 6. Write a program that calculates the sum of all elements in an array.
+    
 {
     let array = [2, 4, 6,];
     let total = 0;
 
-    for(let i=0; i<array; i++){
+    for(let i=0; i<array.length; i++){
         total += array[i];
     }
-    console.log(array[i]);
+    console.log(total);
 }
+
+
 // 7. Write a program that finds the largest number in an array.
+{
+    let array = [40, 20, 94, 12, 100, 44];
+    let largest = array[0];
+    
+    for(let i = 0; i < array.length; i++){
+        if(array[i] > largest){
+             largest = array[i];
+        }
+    }
+    console.log('the largest number is ', largest);
+}
 
 
 // 8. Write a program that counts the number of vowels in a given string.
+
+{
+    let count = 0;
+    let string = 'skill';
+    
+    for(let i = 0; i < string.length; i++ ){
+        if(string[i] == 'a' || string[i] == 'e' || string[i] == 'i' || string[i] == 'o' || string[i] == 'u'){
+            count++;
+        }
+    }
+    console.log('number of vowels is',count);
+}
