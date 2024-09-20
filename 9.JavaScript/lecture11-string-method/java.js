@@ -48,7 +48,7 @@
 
 {
     let str = "This is charPointAt Method in JS!"
-    console.log(str.codePointAt(15));//110
+    console.log(str.codePointAt('charpoint at',15));//110
     console.log(str.codePointAt(-15)); // undefined
 }
 
