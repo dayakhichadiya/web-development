@@ -185,11 +185,12 @@
 // Number.prototype.toPrecision()
 
 {
-    let num = 56.2365
-    console.log(num.toPrecision())
-    console.log(num.toPrecision(1))
-    console.log(num.toPrecision(2))
-    console.log(num.toPrecision(3))
-    console.log(num.toPrecision(4))
-    console.log(num.toPrecision(5))   
+    let num = 76.2365
+    console.log(num.toPrecision()) // 76.2365
+    console.log(num.toPrecision(1)) // 8e+1
+    console.log(num.toPrecision(2)) // 76
+    console.log(num.toPrecision(3)) // 76.2
+    console.log(num.toPrecision(4)) // 76.24
+    console.log(num.toPrecision(5))  // 76.237
+    
 }
