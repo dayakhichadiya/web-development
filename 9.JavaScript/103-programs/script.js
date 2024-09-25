@@ -79,11 +79,76 @@
 // 11) Javascript Program to Check if a Number is Odd or Even
 // 12)JavaScript Program to Find the Largest Among Three Numbers
 // 13)JavaScript Program to Check Prime Number
+
+
 // 14)JavaScript Program to Print All Prime Numbers in an Interval
+
+
+
 // 15)JavaScript Program to Find the Factorial of a Number
+
+{
+    let num = 6;
+    let total = 1;
+
+    if(num == 0){
+        console.log('negative number or zero does not exist')
+    }
+    else {
+        for(let i = 1; i <= num; i++){
+            total *= i;
+        }
+    }
+    console.log(total);
+}
+
 // 16)JavaScript Program to Display the Multiplication Table
+
+{
+    let tablenum = 5;
+    
+    for (let i = 1; i <= 10; i++){
+        console.log(tablenum, i, tablenum * i);
+    }
+}
+
 // 17)JavaScript Program to Print the Fibonacci Sequence
+
+{
+    let num = 10;
+    let n1 = 0, n2 = 1, nextnum;
+
+    for(let i = 0; i <= num; i++){
+        console.log(n1); // 0
+        nextnum = n1 + n2; // 0 + 1
+        n1 = n2; // 0 = 1
+        n2 = nextnum; //1+2 = 3
+    }
+}
+
 // 18)JavaScript Program to Check Armstrong Number
+
+{
+    let sum = 0;
+    let num = 153;
+
+    let temp = num;
+    while (temp > 0){
+        let remainder = temp % 10;
+
+        sum += remainder + remainder + remainder;
+        
+        temp = parseInt(temp / 10);
+    }
+
+    if(sum == num){
+        console.log(` ${num} is number is armstrong number `)
+    }
+    else{
+        console.log(`${num} is not an armstrong number`)
+    }
+
+}
 // 19)JavaScript Program to Find Armstrong Number in an Interval
 // 20)JavaScript Program to Make a Simple Calculator
 // 21)JavaScript Program to Find the Sum of Natural Numbers
