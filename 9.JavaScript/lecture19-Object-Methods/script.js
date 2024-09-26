@@ -32,3 +32,12 @@
 // Object.assign(target, source1)
 // Object.assign(target, source1, source2)
 // Object.assign(target, source1, source2, /* …, */ sourceN)
+
+{
+    let NewObject = { obj1 : "value1", obj2 : "value2", obj3 : "value3"};
+    let NewObject1 = { obj1 : "value4", obj2 : "value5", obj3 : "value6"};
+    let NewObject2 = { obj1 : "value7", obj2 : "value8", obj3 : "value9"};
+
+    let MainObject = Object.assign(NewObject, NewObject1);
+
+}
