@@ -83,6 +83,24 @@
 
 // 14)JavaScript Program to Print All Prime Numbers in an Interval
 
+{
+    let firstNum = 2;
+    let lastNum = 10;
+
+    for(let i = firstNum; i <= lastNum; i++){
+        let temp = 0;
+    
+
+    for(let j = 2; j < i; j++){
+        if(i % j == 0){
+            temp = 1;
+            break;
+        }
+    }
+        if(i > 1 && temp == 0)
+        console.log(i)
+    }
+}
 
 
 // 15)JavaScript Program to Find the Factorial of a Number
@@ -142,7 +160,7 @@
     }
 
     if(sum == num){
-        console.log(` ${num} is number is armstrong number `)
+        console.log(` ${num} is armstrong number `)
     }
     else{
         console.log(`${num} is not an armstrong number`)
@@ -151,6 +169,15 @@
 }
 // 19)JavaScript Program to Find Armstrong Number in an Interval
 // 20)JavaScript Program to Make a Simple Calculator
+
+const num1 = prompt('enter first number :');
+const num2 = prompt('enter second number :');
+
+switch(operator) {
+    case '-':
+}
+
+
 // 21)JavaScript Program to Find the Sum of Natural Numbers
 // 22)JavaScript Program to Check if the Numbers Have Same Last Digit
 // 23)JavaScript Program to Find HCF or GCD
