@@ -253,39 +253,75 @@
 // 19)JavaScript Program to Find Armstrong Number in an Interval
 // 20)JavaScript Program to Make a Simple Calculator
 
-const operator = prompt('Enter operator :');
+{
+    // const operator = prompt('Enter operator :');
 
-const num1 = prompt('enter first number :');
-const num2 = prompt('enter second number :');
+    // const num1 = parseInt(prompt('enter first number :'));
+    // const num2 = parseInt(prompt('enter second number :'));
 
-let result;
+    // let result;
 
-switch (operator) {
-    case '-':
-        result = num1 - num2;
-        console.log(`${num1} - ${num2} = ${result}`);
-        break;
+    // switch (operator) {
+    //     case '+':
+    //         result = num1 + num2;
+    //         console.log(`${num1} + ${num2} = ${result}`);
+    //         break;
 
-    case '+':
-        result = num1 + num2;
-        console.log(`${num1} + ${num2} = ${result}`);
-        break;
+    //     case '-':
+    //         result = num1 - num2;
+    //         console.log(`${num1} - ${num2} = ${result}`);
+    //         break;
 
-    case '*':
-        result = num1 * num2;
-        console.log(`${num1} * ${num2} = ${result}`);
-        break;
+    //     case '*':
+    //         result = num1 * num2;
+    //         console.log(`${num1} * ${num2} = ${result}`);
+    //         break;
 
-    case '/':
-        result = num1 / num2;
-        console.log(`${num1} / ${num2} = ${result}`);
-        break;
+    //     case '/':
+    //         result = num1 / num2;
+    //         console.log(`${num1} / ${num2} = ${result}`);
+    //         break;
+
 }
 
 
 // 21)JavaScript Program to Find the Sum of Natural Numbers
+
+{
+    // const num = parseFloat(prompt('enter the natural number'));
+    // let sum = 0;
+
+    // for(let i = 1; i <= num; i++){
+    //     sum += i;
+    // }
+    // console.log('the sum of natural number is',sum);
+}
+
+
 // 22)JavaScript Program to Check if the Numbers Have Same Last Digit
+
+{
+    // const num1 = parseFloat(prompt('Enter first number'));
+    // const num2 = parseFloat(prompt('Enter second number'));
+    // const num3 = parseFloat(prompt('Enter third number'));
+    
+    // // let result1 = num1.length  
+
+    // let result1 = num1 % 10;
+    // let result2 = num2 % 10;
+    // let result3 = num3 % 10;
+
+    // if(result1 == result2 && result1 == result3){
+    //     console.log(`${num1} , ${num2} and ${num3} has Last digit are same`);
+    // }
+    // else{
+    //     console.log(`${num1} , ${num2} and ${num3} has Last digit are different`);
+    // }
+
+}
 // 23)JavaScript Program to Find HCF or GCD
+
+
 // 24)JavaScript Program to Find LCM
 // 25)JavaScript Program to Find the Factors of a Number
 // 26)JavaScript Program to Find Sum of Natural Numbers Using Recursion
