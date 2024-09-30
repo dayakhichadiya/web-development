@@ -324,8 +324,34 @@
 
 // 24)JavaScript Program to Find LCM
 // 25)JavaScript Program to Find the Factors of a Number
+
+{
+    let num = 12;
+
+    for(let i = 1; i <= num; i++){
+        if(num % i == 0){
+            console.log(i);
+        }
+    }
+}
 // 26)JavaScript Program to Find Sum of Natural Numbers Using Recursion
+
+
 // 27)JavaScript Program to Guess a Random Number
+
+// {
+//     const random = Math.floor(Math.random() *50 )+1;
+
+//     let num = parseInt(40);
+//     // while(num !== random ){
+//     //     num = parseInt(console.log(`${num}`))
+//     // }
+
+//     if(num == random){
+//         console.log("you Guess correct number");
+//     }
+// }
+
 // 28)JavaScript Program to Shuffle Deck of Cards
 // 29)JavaScript Program to Display Fibonacci Sequence Using Recursion
 // 30)JavaScript Program to Find Factorial of Number Using Recursion
