@@ -304,7 +304,7 @@
     // const num1 = parseFloat(prompt('Enter first number'));
     // const num2 = parseFloat(prompt('Enter second number'));
     // const num3 = parseFloat(prompt('Enter third number'));
-    
+
     // // let result1 = num1.length  
 
     // let result1 = num1 % 10;
@@ -328,8 +328,8 @@
 {
     let num = 12;
 
-    for(let i = 1; i <= num; i++){
-        if(num % i == 0){
+    for (let i = 1; i <= num; i++) {
+        if (num % i == 0) {
             console.log(i);
         }
     }
@@ -355,21 +355,278 @@
 // 28)JavaScript Program to Shuffle Deck of Cards
 // 29)JavaScript Program to Display Fibonacci Sequence Using Recursion
 // 30)JavaScript Program to Find Factorial of Number Using Recursion
+
 // 31)JavaScript Program to Convert Decimal to Binary
+
+{
+    function decimalnum(value) {
+        return value.toString(2);
+    }
+    let num = 5;
+    let result = decimalnum(num);
+    console.log(result)
+}
 // 32)JavaScript Program to Find ASCII Value of Character
+
+{
+    // let char = prompt("Enter the character :");
+
+    // let result = char.charCodeAt();
+    // console.log(`The ASCII value of ${char} is`,result);
+}
 // 33)JavaScript Program to Check Whether a String is Palindrome or Not
+
+{
+    // function check(){
+
+    //     const len = String.length;
+
+    //     for(let i = 0; i < len / 2; i++){
+    //         if(String[i] !== String[len - 1 - i])
+    //             return 'String is not a palindrome'
+    //     }
+    //     return 'String is palindrome';
+    // }
+    // const String = prompt("Enter a string");
+    // const result = check(String);
+    // console.log(result)
+}
 // 34)JavaScript Program to Sort Words in Alphabetical Order
+
+
 // 35)JavaScript Program to Replace Characters of a String
+
+{
+    let str = "My cat name is grove and dog name is jacky"
+
+    let newstr = str.replace('grove', 'kitty');
+    console.log(newstr);
+}
 // 36)JavaScript Program to Reverse a String
+
+{
+    function reverse(str) {
+
+        let newstr = '';
+
+        for (let i = str.length - 1; i >= 0; i--) {
+            newstr += str[i];
+        }
+        return newstr;
+    }
+    let result = reverse('skill');
+    console.log(result)
+}
+
 // 37)JavaScript Program to Create Objects in Different Ways
-// 38)JavaScript Program to Check the Number of Occurrences of a Character in
-// the String
+// 38)JavaScript Program to Check the Number of Occurrences of a Character in the String
+
 // 39)JavaScript Program to Convert the First Letter of a String into UpperCase
+
+{
+    let str = "roman"
+    let capital = str.charAt(0).toUpperCase() + str.slice(1);
+    console.log(capital)
+}
 // 40)JavaScript Program to Count the Number of Vowels in a String
+
+{
+    let str = 'Asia';
+
+    let count = str.match(/[aAeEiIoOuU]/gi).length;
+    console.log(count)
+}
+
 // 41)JavaScript Program to Remove a Property from an Object
-// 42)JavaScript Program to Check Whether a String Starts and Ends With Certain
-// Characters
+
+{
+    const employe = {
+        name: 'Ruta',
+        age: 23,
+        hobbies: 'reading',
+        greet: function () {
+            console.log('Introduction')
+        },
+        marks: {
+            maths: 50,
+            english: 60,
+        }
+    }
+    delete employe.greet;
+    console.log(employe)
+}
+
+// 42)JavaScript Program to Check Whether a String Starts and Ends With Certain Characters
+
+{
+    let str = "Flying";
+    let startIndex = "F";
+    let endIndex = "g";
+
+    const startcheck = str.charAt(0) === startIndex;
+
+    const endcheck = str.charAt(str.length - 1) === endIndex;
+
+    if (startcheck && endcheck) {
+        console.log('true');
+    }
+    else {
+        console.log('false');
+    }
+
+}
 // 43)JavaScript Program to Check if a Key Exists in an Object
+
+{
+    const employe = {
+        name: 'Ruta',
+        age: 23,
+        hobbies: 'reading',
+    }
+
+    let result = employe.hasOwnProperty('age')
+    console.log(result);
+}
+
 // 44)JavaScript Program to Clone a JS Object
+
 // 45)JavaScript Program to Loop Through an Object
+
+{
+    const employe = {
+        name: 'sita',
+        age: 23,
+        hobbies: 'reading',
+    }
+    for (let key in employe) {
+        let value;
+        value = employe[key];
+
+        console.log(key + ":" + value)
+    }
+}
+
 // 46)JavaScript Program to Merge Property of Two Objects
+
+{
+    const obj1 = {
+        name: 'sia',
+        age: 27
+    }
+
+    const obj2 = {
+        gender: 'female',
+    }
+
+    const newObj = Object.assign(obj1, obj2);
+    console.log(newObj)
+}
+
+// 47)JavaScript Program to Count the Number of Keys/Properties in an Object
+
+{
+    const obj1 = {
+        name: 'sia',
+        age: 27,
+        gender: 'female',
+        hobbies: 'reading'
+    }
+
+    let count = 0;
+
+    for (let key in obj1) {
+        ++count;
+    }
+    console.log(count);
+
+}
+// 48)JavaScript Program to Add Key/Value Pair to an Object
+
+{
+    const obj = {
+        name: 'sia',
+        gender: 'female',
+        hobbies: 'reading'
+    }
+
+    obj.age = 24;
+    console.log(obj)
+}
+
+// 49)JavaScript Program to Replace All Occurrences of a String
+
+{
+    const str = 'My cat is very smart but my cat is also dangerous ';
+
+    const regex = /cat/gi;
+
+    const newstr = str.replace(regex, 'dog');
+    console.log(newstr)
+}
+// 50)JavaScript Program to Create Multiline Strings
+
+{
+    const str = 'This is string method \n' +
+        'String method in javascript\n' +
+        'Multiline String method';
+
+    console.log(str);
+}
+
+// 51)JavaScript Program to Format Numbers as Currency Strings
+
+{
+    
+}
+// 52)JavaScript Program to Generate Random String
+// 53)JavaScript Program to Check if a String Starts With Another String
+// 54)JavaScript Program to Trim a String
+// 55)JavaScript Program to Convert Objects to Strings
+// 56)JavaScript Program to Check Whether a String Contains a Substring
+// 57)JavaScript Program to Compare Two Strings
+// 58)JavaScript Program to Encode a String to Base64
+// 59)JavaScript Program to Replace all Instances of a Character in a String
+// 60)JavaScript Program to Replace All Line Breaks with
+// 61)JavaScript Program to Display Date and Time
+// 62)JavaScript Program to Check Leap Year
+// 63)JavaScript Program to Format the Date
+// 64)Javascript Program to Display Current Date
+// 65)JavaScript Program to Compare The Value of Two Dates
+// 66)JavaScript Program to Create Countdown Timer
+// 67)JavaScript Program to Remove Specific Item From an Array
+// 68)JavaScript Program to Check if An Array Contains a Specified Value
+// 69)JavaScript Program to Insert Item in an Array
+// 70)JavaScript Program to Append an Object to an Array
+// 71)JavaScript Program to Check if An Object is An Array
+// 72)JavaScript Program to Empty an Array
+// 73)JavaScript Program to Add Element to Start of an Array
+// 74)JavaScript Program to Remove Duplicates From Array
+// 75)JavaScript Program to Merge Two Arrays and Remove Duplicate Items
+// 76)JavaScript Program to Sort Array of Objects by Property Values
+// 77)JavaScript Program to Create Two Dimensional Array
+// 78)JavaScript Program to Extract Given Property Values from Objects as Array
+// 79)JavaScript Program to Compare Elements of Two Arrays
+// 80)JavaScript Program to Get Random Item From an Array
+// 81)JavaScript Program To Perform Intersection Between Two Arrays
+// 82)JavaScript Program to Split Array into Smaller Chunks
+// 83)JavaScript Program to Include a JS file in Another JS file
+// 84)JavaScript Program to Get File Extension
+// 85)JavaScript Program To Check If A Variable Is undefined or null
+// 86)JavaScript Program to Set a Default Parameter Value For a Function
+// 87)JavaScript Program to Illustrate Different Set Operations
+// 88)Javascript Program to Generate a Random Number Between Two Numbers
+// 89)JavaScript Program To Get The Current URL
+// 90)JavaScript Program to Validate An Email Address
+// 91)JavaScript Program to Check If a Variable is of Function Type
+// 92)JavaScript Program To Work With Constants
+// 93)JavaScript Program to Pass Parameter to a setTimeout() Function
+// 94)JavaScript Program to Generate a Range of Numbers and Characters
+// 95)JavaScript Program to Perform Function Overloading
+// 96)JavaScript Program to Implement a Stack
+// 97)JavaScript Program to Implement a Queue
+// 98)JavaScript Program to Check if a Number is Float or Integer
+// 99)JavaScript Program to Pass a Function as Parameter
+// 100) JavaScript Program to Get the Dimensions of an Image
+// 101) JavaScript Program to Remove All Whitespaces From a Text
+// 102) JavaScript Program to Write to Console
+// 103) JavaScript Program to Convert Date to Number

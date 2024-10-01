@@ -37,7 +37,6 @@
         let result1 = await myPromise1;
         console.log('This is Aync and Await Method 1')
 
-
     }
     Progress1()
 
