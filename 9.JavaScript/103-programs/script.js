@@ -576,10 +576,25 @@
 // 51)JavaScript Program to Format Numbers as Currency Strings
 
 {
-    
+    const num = 124.5678;
+
+    const result = '$' + num.toFixed(2);
+    console.log(result)
 }
 // 52)JavaScript Program to Generate Random String
 // 53)JavaScript Program to Check if a String Starts With Another String
+
+{
+    const str = 'Hello world'
+    const  check = 'hel';
+
+    if(str.startsWith(check)){
+        console.log('string starts with "hel"')
+    }
+    else{
+        console.log('the string is not starts with "hell"')
+    }
+    }
 // 54)JavaScript Program to Trim a String
 // 55)JavaScript Program to Convert Objects to Strings
 // 56)JavaScript Program to Check Whether a String Contains a Substring
@@ -625,8 +640,41 @@
 // 96)JavaScript Program to Implement a Stack
 // 97)JavaScript Program to Implement a Queue
 // 98)JavaScript Program to Check if a Number is Float or Integer
+{
+    let num = 45.89;
+    let result = Number.isInteger(num);
+
+    console.log('number is integer')
+    
+
+}
 // 99)JavaScript Program to Pass a Function as Parameter
 // 100) JavaScript Program to Get the Dimensions of an Image
+
 // 101) JavaScript Program to Remove All Whitespaces From a Text
+{
+    let str = '   this is trim method in javascript    '
+    console.log(str.length);// 40
+
+    let Trim = str.trim();
+    console.log(Trim);
+    console.log(Trim.length);// now length is 33
+
+}
 // 102) JavaScript Program to Write to Console
+
+{
+    let num = 58;
+    console.log(num)
+
+    console.log("Write to console")
+}
 // 103) JavaScript Program to Convert Date to Number
+
+{
+    let date = new Date();
+    console.log(date);
+
+    let result = date.getTime();
+    console.log(result)
+}
