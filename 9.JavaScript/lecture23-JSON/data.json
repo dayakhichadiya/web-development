@@ -1,1 +1,37 @@
-{}
+{
+    "product":[
+        {
+            "id":101,
+            "productName":"iphone12",
+            "productColor":"gray"
+        },
+        {
+            "id":102,
+            "productName":"samsung-S22",
+            "productColor":"Blue"
+        },
+        {
+            "id":103,
+            "productName":"iphone16",
+            "productColor":"pink"
+        }
+    ],
+
+    "profile" : [
+        {
+           "id" : "AB-12",
+           "Name" : "sara",
+           "Age" : 25
+        },
+        {
+            "id" : "CD-13",
+            "Name" : "bhumi",
+            "Age" : 22
+         },
+         {
+            "id" : "QR-14",
+            "Name" : "mansi",
+            "Age" : 24
+         }
+    ]
+}
