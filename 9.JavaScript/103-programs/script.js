@@ -595,27 +595,165 @@
         console.log('the string is not starts with "hell"')
     }
     }
+
 // 54)JavaScript Program to Trim a String
+
+{
+    let string = "      Javascript string Method    ";
+
+    let result = string.trim();
+    console.log(result)
+}
+
 // 55)JavaScript Program to Convert Objects to Strings
+
+{
+    const profile = {
+        name : "Riya",
+        age : 23
+    }
+    const result = JSON.stringify(profile)
+    console.log(result);
+}
+
 // 56)JavaScript Program to Check Whether a String Contains a Substring
+
+{
+    let str = "Javascript string method"
+    let checkstr = "string";
+
+    if(str.includes(checkstr)){
+        console.log(`the string contains ${checkstr}`);
+    }else{
+        console.log(`the string does not contains ${checkstr} `)
+    }
+}
 // 57)JavaScript Program to Compare Two Strings
+
+{
+    function compare(str1, str2){
+        if(str1.toUpperCase() === str2.toUpperCase()){
+            console.log("the strings are equlas")
+        }
+        else{
+            console.log("strings are not equal")
+        }
+    }
+    compare("skill", "Skill")
+}
 // 58)JavaScript Program to Encode a String to Base64
+
 // 59)JavaScript Program to Replace all Instances of a Character in a String
+
+{
+    let str = "My cat is very smart but my cat is also dangerous";
+
+    let regex = /cat/gi;
+    let newstr = str.replace(regex, 'dog');
+    console.log(newstr);
+}
 // 60)JavaScript Program to Replace All Line Breaks with
+
 // 61)JavaScript Program to Display Date and Time
+
+{
+    const date = new Date();
+    const d = date.toDateString()
+    console.log('Date :',d);
+
+    const time = date.toLocaleDateString()
+    console.log('Time :',time);
+}
 // 62)JavaScript Program to Check Leap Year
+
+{
+    const year = 2024;
+
+    if((year % 100 == 0 || year % 400 == 0 || year % 4 == 0)){
+        console.log(`${year} is a leap year`);
+    }
+    else{
+        console.log(`${year} is not a leap year`);
+    }
+}
+
 // 63)JavaScript Program to Format the Date
+
+{
+
+}
 // 64)Javascript Program to Display Current Date
+
+{
+    const date = new Date();
+    const d = date.toDateString();
+    console.log("Date :",d)
+}
+
 // 65)JavaScript Program to Compare The Value of Two Dates
+
 // 66)JavaScript Program to Create Countdown Timer
+
+{
+
+}
 // 67)JavaScript Program to Remove Specific Item From an Array
+
+{
+    let array = [1, 2, 3, 4, 5, 6]
+
+    let result = array.pop();
+    console.log("deleted element is",result);
+    console.log("remaining element is ", array);
+}
+
 // 68)JavaScript Program to Check if An Array Contains a Specified Value
+
+{
+    const array = ["javascript", "array", "method"]
+    const result = array.includes("array");
+
+    if(result){
+        console.log("Array contains a value")
+    }
+    else{
+        console.log("array does not contain a value")
+    }
+    
+
+}
+
 // 69)JavaScript Program to Insert Item in an Array
+
+{
+    const arr = [1, 2, 4, 5, 6]
+    const index = 2;
+    const element = 7;
+
+    arr.splice(index,0,element);
+    console.log(arr);
+}
 // 70)JavaScript Program to Append an Object to an Array
 // 71)JavaScript Program to Check if An Object is An Array
 // 72)JavaScript Program to Empty an Array
+
 // 73)JavaScript Program to Add Element to Start of an Array
+
+{
+    let array = [10, 20, 30, 40]
+    array.unshift(60);
+
+    console.log(array)
+}
+
 // 74)JavaScript Program to Remove Duplicates From Array
+
+{
+    let arr = [1, 2, 2, 3, 3, 4, 5]
+
+    let newarr = [new Set(arr)];
+    console.log(newarr)
+}
 // 75)JavaScript Program to Merge Two Arrays and Remove Duplicate Items
 // 76)JavaScript Program to Sort Array of Objects by Property Values
 // 77)JavaScript Program to Create Two Dimensional Array
@@ -635,16 +773,27 @@
 // 91)JavaScript Program to Check If a Variable is of Function Type
 // 92)JavaScript Program To Work With Constants
 // 93)JavaScript Program to Pass Parameter to a setTimeout() Function
+
+{
+    function intro(){
+        console.log("hello, My name is avsx")
+    }
+    setTimeout(intro, 3000);
+    console.log("The first message")
+}
+// program to pass parameter to a setTimeout() function
+
+
 // 94)JavaScript Program to Generate a Range of Numbers and Characters
 // 95)JavaScript Program to Perform Function Overloading
 // 96)JavaScript Program to Implement a Stack
 // 97)JavaScript Program to Implement a Queue
 // 98)JavaScript Program to Check if a Number is Float or Integer
 {
-    let num = 45.89;
-    let result = Number.isInteger(num);
+//     let num = 45.89;
+//     let result = Number.isInteger(num);
 
-    console.log('number is integer')
+//     console.log('number is integer')    
     
 
 }
@@ -653,28 +802,28 @@
 
 // 101) JavaScript Program to Remove All Whitespaces From a Text
 {
-    let str = '   this is trim method in javascript    '
-    console.log(str.length);// 40
+    // let str = '   this is trim method in javascript    '
+    // console.log(str.length);// 40
 
-    let Trim = str.trim();
-    console.log(Trim);
-    console.log(Trim.length);// now length is 33
+    // let Trim = str.trim();
+    // console.log(Trim);
+    // console.log(Trim.length);// now length is 33
 
 }
 // 102) JavaScript Program to Write to Console
 
 {
-    let num = 58;
-    console.log(num)
+    // let num = 58;
+    // console.log(num)
 
-    console.log("Write to console")
+    // console.log("Write to console")
 }
 // 103) JavaScript Program to Convert Date to Number
 
 {
-    let date = new Date();
-    console.log(date);
+    // let date = new Date();
+    // console.log(date);
 
-    let result = date.getTime();
-    console.log(result)
+    // let result = date.getTime();
+    // console.log(result)
 }
