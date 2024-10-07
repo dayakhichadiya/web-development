@@ -765,13 +765,59 @@
 // 83)JavaScript Program to Include a JS file in Another JS file
 // 84)JavaScript Program to Get File Extension
 // 85)JavaScript Program To Check If A Variable Is undefined or null
+
+{
+    function check(variable){
+        if(variable == null){
+            console.log("the variable is undefined or NULL")
+        }else{
+            console.log("the variable is not undefined or not a null")
+        }
+    }
+    let nullvar;
+    check(nullvar);
+    check(5)
+}
 // 86)JavaScript Program to Set a Default Parameter Value For a Function
 // 87)JavaScript Program to Illustrate Different Set Operations
 // 88)Javascript Program to Generate a Random Number Between Two Numbers
 // 89)JavaScript Program To Get The Current URL
+
 // 90)JavaScript Program to Validate An Email Address
+{
+    let email = "daya0909@gmail.com"
+    let check = /^[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    const valid = check.test(email);
+    console.log(valid)
+}
+
 // 91)JavaScript Program to Check If a Variable is of Function Type
+
+{
+    function check(variable){
+
+        if(typeof variable === 'function'){
+            console.log("Variable is of function type");
+        }
+        else{
+            console.log("variable is not of function type")
+        }
+    }
+
+    const count = true;
+    const a = function(){
+        console.log('hello!!!')
+    }
+    check(count)
+    check(a)
+}
 // 92)JavaScript Program To Work With Constants
+
+{
+    const num = [1, 2, 3, 4, 5, 6]
+    console.log(num);
+}
 // 93)JavaScript Program to Pass Parameter to a setTimeout() Function
 
 {

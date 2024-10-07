@@ -50,7 +50,7 @@
 // Array.from(arrayLike, mapFn)
 // Array.from(arrayLike, mapFn, thisArg)
 
-// The Array.from() static method creates a new, shallow-copied Array instance from an iterable or array-like object.
+// The Array.from() static method creates a new, shallow-copied Array instance from an iterable or array-like object. 
 {
     let array = Array.from('123456')
     console.log(array);//(6) ['1', '2', '3', '4', '5', '6']
