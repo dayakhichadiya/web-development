@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    /* text-decoration: none; */
+}
+body{
+    /* background-color: rgb(204, 229, 242); */
+    background-color: #f6f7f9;
+    font-family: 'Arial', sans-serif;
+}
+
+.img{
+    display:flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.max{
+    max-width: 1100px;
+    margin: auto;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    background-color: #fefefe;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    font-size: 20px;
+    color: #4A4A4A;
+    /* text-decoration: none; */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    font-size: 17px;
+}
+ul li .nav-links{
+    list-style-type: disc;
+
+}
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    /* text-decoration: none; */
+    color: #4A4A4A;
+    font-size: 16px;
+    padding: 10px;
+    transition: color 0.3s ease;
+    list-style-type: circle;
+    text-decoration: gold;
+    text-decoration: double;
+    
+}
+
+.nav-links a.active {
+    /* color: #FFB74D; */
+}
+
+.nav-links a:hover {
+    color: #FFB74D;
+}
+
+.nav-icons a {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #4A4A4A;
+    /* text-decoration: none; */
+}
+
+.nav-icons a:hover {
+    color: #FFB74D;
+}
+
+
+/* img -section */
+
+.img-section{
+    max-width: fit-content;
+    /* margin: auto; */
+}
+.inner{
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: start; */
+    overflow-x: scroll ;
+    scroll-behavior: smooth;
+    scrollbar-width: 20px;
+    
+
+}
+.inner img {
+    height: 567px;
+    width: 850px; 
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+/* services-section */
+
+.service-sec .box-1{
+    border: 2px solid black;
+    width: 265.5px;
+    height: 175px;
+    margin-block: 140px;
+}
+.box-1 img{
+    width: 265.5px;
+    height: 175px;
+}
+.myServices {
+    font-family: "Urbanist", sans-serif;
+
+}
+.myServices h2{
+    color : #343f52;
+    font-size: 34px;
+    font-weight: 500;
+    font-weight: semi-bold;
+}
+.para1{
+    font-size: 22px;
+    font-weight: 500;
+    color: #60697b;
+}
+.para2{
+    font-size: 17px;
+    font-weight: 500;
+    color: #60697b;
+}
+.morebtn{
+    background-color: #fab758;
+    border-radius : 1000px;
+    font-size : 17px;
+    line-height : 28.9px;
+    font-weight: 600;
+    padding : 6px 8px;
+    border:none;
+    color: #f6f7f9;
+    font-family: "Urbanist", sans-serif;
+}
+
+
+// Photography creativity
+.photograph {
+    margin-block: 140px;
+}
+.photograph .img-photo{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-attachment : fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 140px;
+}
+
+.photo-content {
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    padding: 120px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    position: relative;
+    z-index: 2;
+    border:2px solid black;
+    
+}
+
+.photo-content h2{
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+@media (max-width: 768px) {
+    .photograph h2{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-content h2 {
+        font-size: 1.5rem;
+    }
+}
