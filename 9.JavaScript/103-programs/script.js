@@ -827,7 +827,6 @@
     setTimeout(intro, 3000);
     console.log("The first message")
 }
-// program to pass parameter to a setTimeout() function
 
 
 // 94)JavaScript Program to Generate a Range of Numbers and Characters

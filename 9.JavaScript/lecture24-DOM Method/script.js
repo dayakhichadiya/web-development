@@ -13,10 +13,18 @@ function removeId(){
 }
 
 // console.log(document.getElementById('heading'));
+console.log(document.getElementById('heading'))
 console.log(document.getElementById('heading').id);
 
-let dom2 = document.getElementById('para1').className
-console.log(dom2)
+let dom2 = document.getElementById('heading').className
+console.log(dom2) 
 
-let dom3 = document.getElementById('para1').classList[0]
+let dom3 = document.getElementById('heading').classList
 console.log(dom3)
+
+console.log(document.getElementsByClassName('para1'))
+function add(){
+    let dom = document.getElementsByTagName('h1')
+    console.log(dom);
+    dom.setAttribute('id', 'heading')
+}
