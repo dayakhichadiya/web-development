@@ -25,10 +25,10 @@
 //}
 
 // {
-//     function elementStyle1() {
-//         let dom1 = document.getElementById('heading1')
-//         dom1.classList.add('head')
-//     }
+    // function elementStyle1() {
+    //     let dom1 = document.getElementById('heading1')
+    //     dom1.classList.add('head')
+    // }
 
 //     function elementStyle2() {
 //         let dom2 = document.getElementById('heading1')
@@ -41,9 +41,9 @@
 //     }
 // }
 
-// {
-//     let dom = document.getElementById('heading1').addEventListener('dblclick',  () => {
-//         let dom = document.getElementById('heading1');
-//         dom.classList.add('head')
-//     })
-// }
+{
+    let dom = document.getElementById('heading1').addEventListener('dblclick',  () => {
+        let dom = document.getElementById('heading1')
+        dom.classList.add('head')   
+    })
+}
