@@ -323,6 +323,20 @@
 
 
 // 24)JavaScript Program to Find LCM
+{
+    const num1 = prompt('Enter the firdt number :')
+    const num2 = prompt('Enter the second number :')
+
+    let min = (num1 > num2) ? num1:num2;
+
+    while(true){
+        if(min % num1 == 0 && min % num2 == 0){
+            console.log(`the LCM is ${min}`);
+            break;
+        }
+        min++;
+    }
+}
 // 25)JavaScript Program to Find the Factors of a Number
 
 {
