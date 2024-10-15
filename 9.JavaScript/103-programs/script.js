@@ -324,18 +324,18 @@
 
 // 24)JavaScript Program to Find LCM
 {
-    const num1 = prompt('Enter the firdt number :')
-    const num2 = prompt('Enter the second number :')
+    // const num1 = prompt('Enter the firdt number :')
+    // const num2 = prompt('Enter the second number :')
 
-    let min = (num1 > num2) ? num1:num2;
+    // let min = (num1 > num2) ? num1:num2;
 
-    while(true){
-        if(min % num1 == 0 && min % num2 == 0){
-            console.log(`the LCM is ${min}`);
-            break;
-        }
-        min++;
-    }
+    // while(true){
+    //     if(min % num1 == 0 && min % num2 == 0){
+    //         console.log(`the LCM is ${min}`);
+    //         break;
+    //     }
+    //     min++;
+    // }
 }
 // 25)JavaScript Program to Find the Factors of a Number
 
@@ -799,7 +799,7 @@
 
 // 90)JavaScript Program to Validate An Email Address
 {
-    let email = "daya0909@gmail.com"
+    let email = "daya09@gmail.com"
     let check = /^[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     const valid = check.test(email);
@@ -835,15 +835,29 @@
 // 93)JavaScript Program to Pass Parameter to a setTimeout() Function
 
 {
-    function intro(){
-        console.log("hello, My name is avsx")
-    }
-    setTimeout(intro, 3000);
-    console.log("The first message")
+    // function intro(){
+    //     console.log("hello, My name is avsx")
+    // }
+    // setTimeout(intro, 3000);
+    // console.log("The first message")
 }
 
 
 // 94)JavaScript Program to Generate a Range of Numbers and Characters
+
+{
+    function generatenum(num1, num2){
+    const result = [];
+
+    for(let i in [...Array(num2 - num1 + 1)] ){
+        result.push(Number(i) + num1);
+    }
+    return result;
+    }
+    const result = generatenum(1,4);
+    console.log(result)
+
+}
 // 95)JavaScript Program to Perform Function Overloading
 // 96)JavaScript Program to Implement a Stack
 // 97)JavaScript Program to Implement a Queue
@@ -857,6 +871,19 @@
 
 }
 // 99)JavaScript Program to Pass a Function as Parameter
+
+{
+    function intro(){
+        return 'hello';
+    }
+    function name(user, func)
+    {
+        const name = func();
+        console.log(`${name} ${user}`);
+    }
+    name('sia', intro);
+    name('riya', intro);
+}
 // 100) JavaScript Program to Get the Dimensions of an Image
 
 // 101) JavaScript Program to Remove All Whitespaces From a Text
