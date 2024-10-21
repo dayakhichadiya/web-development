@@ -42,6 +42,14 @@
 
 
 // jQuery Traversing
+
+/* ancestor Method
+
+ parent()
+ parents()
+ parentUntil()
+
+*/
 {
 
     // $(function(){
@@ -74,7 +82,7 @@ val()
 
 */
 
-{
+// {
     // $(function(){
     //     $('#btn').click(function(){
     //         console.log(
