@@ -350,7 +350,19 @@
 }
 // 26)JavaScript Program to Find Sum of Natural Numbers Using Recursion
 
-
+// {
+//     function sum(num) {
+//         if (num > 0) {
+//             return num + sum(num - 1);
+//         }
+//         else {
+//             return num;
+//         }
+//     }
+// }
+// const number = parseInt(prompt('enter a positive integer: '));
+// const result = sum(number);
+// console.log(`The sum is ${result}`);
 // 27)JavaScript Program to Guess a Random Number
 
 // {
@@ -369,16 +381,34 @@
 // 28)JavaScript Program to Shuffle Deck of Cards
 // 29)JavaScript Program to Display Fibonacci Sequence Using Recursion
 // 30)JavaScript Program to Find Factorial of Number Using Recursion
-
+// program to find the factorial of a number 
+// {
+//     function factorial(n) {
+//         if (n == 0) {
+//             return 1;
+//         }
+//         else {
+//             return n * factorial(n - 1);
+//         }
+//     }
+//     const num = prompt('Enter a positive number: ');
+//     if (num >= 0) {
+//         const result = factorial(num);
+//         console.log(`The factorial of ${num} is ${result}`);
+//     }
+//     else {
+//         console.log('Enter a positive number.');
+//     }
+// }
 // 31)JavaScript Program to Convert Decimal to Binary
 
 {
-    function decimalnum(value) {
-        return value.toString(2);
-    }
-    let num = 5;
-    let result = decimalnum(num);
-    console.log(result)
+    // function decimalnum(value) {
+    //     return value.toString(2);
+    // }
+    // let num = 5;
+    // let result = decimalnum(num);
+    // console.log(result)
 }
 // 32)JavaScript Program to Find ASCII Value of Character
 
@@ -407,7 +437,17 @@
 }
 // 34)JavaScript Program to Sort Words in Alphabetical Order
 
+{
+    // const string = prompt('Enter a sentence: ');
+    // const words = string.split(' ');
+    // words.sort();
 
+    // console.log('The sorted words are:');
+
+    // for (const element of words) {
+    //     console.log(element);
+    // }
+}
 // 35)JavaScript Program to Replace Characters of a String
 
 {
@@ -433,7 +473,65 @@
 }
 
 // 37)JavaScript Program to Create Objects in Different Ways
+
+{
+    {
+        const person = {
+            name: 'John',
+            age: 20,
+            hobbies: ['reading', 'games', 'coding'],
+            greet: function () {
+                console.log('Hello everyone.');
+            },
+            score: {
+                maths: 90,
+                science: 80
+            }
+        };
+        console.log(typeof person);
+        console.log(person.name);
+        console.log(person.hobbies[0]);
+        person.greet();
+    }
+
+
+    const person = new Object({
+        name: 'gita',
+        age: 20,
+        greet: function () {
+            console.log('Hello everyone.');
+        },
+        score: {
+            maths: 90,
+            science: 80
+        }
+    });
+
+    console.log(typeof person);
+    console.log(person.name);
+    person.greet()
+}
 // 38)JavaScript Program to Check the Number of Occurrences of a Character in the String
+{
+    // function count(str, letter) {
+    //     let count = 0;
+
+    //     for (let i = 0; i < str.length; i++) {
+
+    //         if (str.charAt(i) == letter) {
+    //             count += 1;
+    //         }
+    //     }
+    //     return count;
+    // }
+
+    // const string = prompt('Enter a string: ');
+    // const letterCheck = prompt('Enter a letter to check: ');
+
+    // const result = count(string, letterCheck);
+
+    // console.log(result);
+}
 
 // 39)JavaScript Program to Convert the First Letter of a String into UpperCase
 
@@ -596,19 +694,20 @@
     console.log(result)
 }
 // 52)JavaScript Program to Generate Random String
+
 // 53)JavaScript Program to Check if a String Starts With Another String
 
 {
     const str = 'Hello world'
-    const  check = 'hel';
+    const check = 'hel';
 
-    if(str.startsWith(check)){
+    if (str.startsWith(check)) {
         console.log('string starts with "hel"')
     }
-    else{
+    else {
         console.log('the string is not starts with "hell"')
     }
-    }
+}
 
 // 54)JavaScript Program to Trim a String
 
@@ -623,8 +722,8 @@
 
 {
     const profile = {
-        name : "Riya",
-        age : 23
+        name: "Riya",
+        age: 23
     }
     const result = JSON.stringify(profile)
     console.log(result);
@@ -636,20 +735,20 @@
     let str = "Javascript string method"
     let checkstr = "string";
 
-    if(str.includes(checkstr)){
+    if (str.includes(checkstr)) {
         console.log(`the string contains ${checkstr}`);
-    }else{
+    } else {
         console.log(`the string does not contains ${checkstr} `)
     }
 }
 // 57)JavaScript Program to Compare Two Strings
 
 {
-    function compare(str1, str2){
-        if(str1.toUpperCase() === str2.toUpperCase()){
+    function compare(str1, str2) {
+        if (str1.toUpperCase() === str2.toUpperCase()) {
             console.log("the strings are equlas")
         }
-        else{
+        else {
             console.log("strings are not equal")
         }
     }
@@ -673,20 +772,20 @@
 {
     const date = new Date();
     const d = date.toDateString()
-    console.log('Date :',d);
+    console.log('Date :', d);
 
     const time = date.toLocaleDateString()
-    console.log('Time :',time);
+    console.log('Time :', time);
 }
 // 62)JavaScript Program to Check Leap Year
 
 {
     const year = 2024;
 
-    if((year % 100 == 0 || year % 400 == 0 || year % 4 == 0)){
+    if ((year % 100 == 0 || year % 400 == 0 || year % 4 == 0)) {
         console.log(`${year} is a leap year`);
     }
-    else{
+    else {
         console.log(`${year} is not a leap year`);
     }
 }
@@ -694,14 +793,30 @@
 // 63)JavaScript Program to Format the Date
 
 {
+    let currentDate = new Date();
+    let day = currentDate.getDate();
+    let month = currentDate.getMonth() + 1;
+    let year = currentDate.getFullYear();
 
+    const formattedDate1 = month + '/' + day + '/' + year;
+    console.log(formattedDate1);
+
+    const formattedDate2 = month + '-' + day + '-' + year;
+    console.log(formattedDate2);
+
+    const formattedDate3 = day + '-' + month + '-' + year;
+    console.log(formattedDate3);
+
+    const formattedDate4 = day + '/' + month + '/' + year;
+    console.log(formattedDate4);
 }
+
 // 64)Javascript Program to Display Current Date
 
 {
     const date = new Date();
     const d = date.toDateString();
-    console.log("Date :",d)
+    console.log("Date :", d)
 }
 
 // 65)JavaScript Program to Compare The Value of Two Dates
@@ -717,7 +832,7 @@
     let array = [1, 2, 3, 4, 5, 6]
 
     let result = array.pop();
-    console.log("deleted element is",result);
+    console.log("deleted element is", result);
     console.log("remaining element is ", array);
 }
 
@@ -727,13 +842,13 @@
     const array = ["javascript", "array", "method"]
     const result = array.includes("array");
 
-    if(result){
+    if (result) {
         console.log("Array contains a value")
     }
-    else{
+    else {
         console.log("array does not contain a value")
     }
-    
+
 
 }
 
@@ -744,13 +859,47 @@
     const index = 2;
     const element = 7;
 
-    arr.splice(index,0,element);
+    arr.splice(index, 0, element);
     console.log(arr);
 }
 // 70)JavaScript Program to Append an Object to an Array
+
+{
+    function add(arr, obj) {
+        arr.push(obj);
+        console.log(arr);
+    }
+    let array = [1, 2, 3];
+    let object = { x: 12, y: 8 };
+    add(array, object);
+}
 // 71)JavaScript Program to Check if An Object is An Array
+{
+    function checkObject(arr) {
+        const result = Array.isArray(arr);
+        if (result) {
+            console.log(`[${arr}] is an array.`);
+        }
+        else {
+            console.log(`${arr} is not an array.`);
+        }
+    }
+    const array = [1, 2, 3];
+    checkObject(array);
+}
 // 72)JavaScript Program to Empty an Array
 
+{
+    function emptyArray(arr) {
+        arr = [];
+        return arr;
+    }
+    const array = [1, 2, 3, 4];
+    console.log(array);
+    const result = emptyArray(array);
+    console.log(result);
+
+}
 // 73)JavaScript Program to Add Element to Start of an Array
 
 {
@@ -769,147 +918,189 @@
     console.log(newarr)
 }
 // 75)JavaScript Program to Merge Two Arrays and Remove Duplicate Items
-// 76)JavaScript Program to Sort Array of Objects by Property Values
-// 77)JavaScript Program to Create Two Dimensional Array
-// 78)JavaScript Program to Extract Given Property Values from Objects as Array
-// 79)JavaScript Program to Compare Elements of Two Arrays
-// 80)JavaScript Program to Get Random Item From an Array
-// 81)JavaScript Program To Perform Intersection Between Two Arrays
-// 82)JavaScript Program to Split Array into Smaller Chunks
-// 83)JavaScript Program to Include a JS file in Another JS file
-// 84)JavaScript Program to Get File Extension
-// 85)JavaScript Program To Check If A Variable Is undefined or null
-
 {
-    function check(variable){
-        if(variable == null){
-            console.log("the variable is undefined or NULL")
-        }else{
-            console.log("the variable is not undefined or not a null")
-        }
-    }
-    let nullvar;
-    check(nullvar);
-    check(5)
+   let arr1 = [1, 2, 3, 4, 5]
+   let arr2 = [4, 5, 6, 7]
+
+   let result = [...arr1, ...arr2];
+   let mergearray = [...new Set(result)];
+   console.log(mergearray)
 }
-// 86)JavaScript Program to Set a Default Parameter Value For a Function
-// 87)JavaScript Program to Illustrate Different Set Operations
-// 88)Javascript Program to Generate a Random Number Between Two Numbers
-// 89)JavaScript Program To Get The Current URL
+    // 76)JavaScript Program to Sort Array of Objects by Property Values
+//     / program to sort array by property name
+// function compareName(a, b) {
+//     // converting to uppercase to have case-insensitive comparison    const name1 = a.name.toUpperCase();
+//     const name2 = b.name.toUpperCase();
+//     let comparison = 0;
+//     if (name1 > name2) {        comparison = 1;
+//     } else if (name1 < name2) {        comparison = -1;
+//     }    return comparison;
+// }
+// const students = [{name: 'Sara', age:24},{name: 'John', age:24}, {name: 'Jack', age:25}];
+// console.log(students.sort(compareName));
 
-// 90)JavaScript Program to Validate An Email Address
-{
-    let email = "daya09@gmail.com"
-    let check = /^[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    // 77)JavaScript Program to Create Two Dimensional Array
 
-    const valid = check.test(email);
-    console.log(valid)
-}
-
-// 91)JavaScript Program to Check If a Variable is of Function Type
-
-{
-    function check(variable){
-
-        if(typeof variable === 'function'){
-            console.log("Variable is of function type");
-        }
-        else{
-            console.log("variable is not of function type")
-        }
-    }
-
-    const count = true;
-    const a = function(){
-        console.log('hello!!!')
-    }
-    check(count)
-    check(a)
-}
-// 92)JavaScript Program To Work With Constants
-
-{
-    const num = [1, 2, 3, 4, 5, 6]
-    console.log(num);
-}
-// 93)JavaScript Program to Pass Parameter to a setTimeout() Function
-
-{
-    // function intro(){
-    //     console.log("hello, My name is avsx")
-    // }
-    // setTimeout(intro, 3000);
-    // console.log("The first message")
-}
-
-
-// 94)JavaScript Program to Generate a Range of Numbers and Characters
-
-{
-    function generatenum(num1, num2){
-    const result = [];
-
-    for(let i in [...Array(num2 - num1 + 1)] ){
-        result.push(Number(i) + num1);
-    }
-    return result;
-    }
-    const result = generatenum(1,4);
-    console.log(result)
-
-}
-// 95)JavaScript Program to Perform Function Overloading
-// 96)JavaScript Program to Implement a Stack
-// 97)JavaScript Program to Implement a Queue
-// 98)JavaScript Program to Check if a Number is Float or Integer
-{
-//     let num = 45.89;
-//     let result = Number.isInteger(num);
-
-//     console.log('number is integer')    
-    
-
-}
-// 99)JavaScript Program to Pass a Function as Parameter
-
-{
-    function intro(){
-        return 'hello';
-    }
-    function name(user, func)
     {
-        const name = func();
-        console.log(`${name} ${user}`);
+        // program to sort array by property name
+function compareAge(a, b) {
+    return a.age - b.age;}
+const students = [{name: 'Sara', age:24},{name: 'John', age:22}, {name: 'Jack', age:27}];
+console.log(students.sort(compareAge));
     }
-    name('sia', intro);
-    name('riya', intro);
-}
-// 100) JavaScript Program to Get the Dimensions of an Image
+    // 78)JavaScript Program to Extract Given Property Values from Objects as Array
 
-// 101) JavaScript Program to Remove All Whitespaces From a Text
-{
-    // let str = '   this is trim method in javascript    '
-    // console.log(str.length);// 40
+    // program to create a two dimensional array
+function twoDimensionArray(a, b) {    let arr = [];
+    // creating two dimensional array
+    for (let i = 0; i< a; i++) {        for(let j = 0; j< b; j++) {
+            arr[i] = [];        }
+    }
+    // inserting elements to array    for (let i = 0; i< a; i++) {
+        for(let j = 0; j< b; j++) {            arr[i][j] = j;
+        }    }
+    return arr;}
+const x = 2;
+const y = 3;
+const result = twoDimensionArray(x, y);console.log(result);
 
-    // let Trim = str.trim();
-    // console.log(Trim);
-    // console.log(Trim.length);// now length is 33
+    // 79)JavaScript Program to Compare Elements of Two Arrays
+    // 80)JavaScript Program to Get Random Item From an Array
+    // 81)JavaScript Program To Perform Intersection Between Two Arrays
+    // 82)JavaScript Program to Split Array into Smaller Chunks
+    // 83)JavaScript Program to Include a JS file in Another JS file
+    // 84)JavaScript Program to Get File Extension
+    // 85)JavaScript Program To Check If A Variable Is undefined or null
 
-}
-// 102) JavaScript Program to Write to Console
+    {
+        function check(variable) {
+            if (variable == null) {
+                console.log("the variable is undefined or NULL")
+            } else {
+                console.log("the variable is not undefined or not a null")
+            }
+        }
+        let nullvar;
+        check(nullvar);
+        check(5)
+    }
+    // 86)JavaScript Program to Set a Default Parameter Value For a Function
+    // 87)JavaScript Program to Illustrate Different Set Operations
+    // 88)Javascript Program to Generate a Random Number Between Two Numbers
+    // 89)JavaScript Program To Get The Current URL
 
-{
-    // let num = 58;
-    // console.log(num)
+    // 90)JavaScript Program to Validate An Email Address
+    {
+        let email = "daya09@gmail.com"
+        let check = /^[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-    // console.log("Write to console")
-}
-// 103) JavaScript Program to Convert Date to Number
+        const valid = check.test(email);
+        console.log(valid)
+    }
 
-{
-    // let date = new Date();
-    // console.log(date);
+    // 91)JavaScript Program to Check If a Variable is of Function Type
 
-    // let result = date.getTime();
-    // console.log(result)
-}
+    {
+        function check(variable) {
+
+            if (typeof variable === 'function') {
+                console.log("Variable is of function type");
+            }
+            else {
+                console.log("variable is not of function type")
+            }
+        }
+
+        const count = true;
+        const a = function () {
+            console.log('hello!!!')
+        }
+        check(count)
+        check(a)
+    }
+    // 92)JavaScript Program To Work With Constants
+
+    {
+        const num = [1, 2, 3, 4, 5, 6]
+        console.log(num);
+    }
+    // 93)JavaScript Program to Pass Parameter to a setTimeout() Function
+
+    {
+        // function intro(){
+        //     console.log("hello, My name is avsx")
+        // }
+        // setTimeout(intro, 3000);
+        // console.log("The first message")
+    }
+
+
+    // 94)JavaScript Program to Generate a Range of Numbers and Characters
+
+    {
+        function generatenum(num1, num2) {
+            const result = [];
+
+            for (let i in [...Array(num2 - num1 + 1)]) {
+                result.push(Number(i) + num1);
+            }
+            return result;
+        }
+        const result = generatenum(1, 4);
+        console.log(result)
+
+    }
+    // 95)JavaScript Program to Perform Function Overloading
+    // 96)JavaScript Program to Implement a Stack
+    // 97)JavaScript Program to Implement a Queue
+    // 98)JavaScript Program to Check if a Number is Float or Integer
+    {
+        //     let num = 45.89;
+        //     let result = Number.isInteger(num);
+
+        //     console.log('number is integer')    
+
+
+    }
+    // 99)JavaScript Program to Pass a Function as Parameter
+
+    {
+        function intro() {
+            return 'hello';
+        }
+        function name(user, func) {
+            const name = func();
+            console.log(`${name} ${user}`);
+        }
+        name('sia', intro);
+        name('riya', intro);
+    }
+    // 100) JavaScript Program to Get the Dimensions of an Image
+
+    // 101) JavaScript Program to Remove All Whitespaces From a Text
+    {
+        // let str = '   this is trim method in javascript    '
+        // console.log(str.length);// 40
+
+        // let Trim = str.trim();
+        // console.log(Trim);
+        // console.log(Trim.length);// now length is 33
+
+    }
+    // 102) JavaScript Program to Write to Console
+
+    {
+        // let num = 58;
+        // console.log(num)
+
+        // console.log("Write to console")
+    }
+    // 103) JavaScript Program to Convert Date to Number
+
+    {
+        // let date = new Date();
+        // console.log(date);
+
+        // let result = date.getTime();
+        // console.log(result)
+    }
