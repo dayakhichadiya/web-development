@@ -133,3 +133,12 @@ val()
 //         )
 //     })
 // })
+
+// 1. Check if jQuery is loaded
+// {
+//     if (typeof jQuery === 'undefined') {
+//         console.log('jQuery is not added')
+//     } else {
+//         console.log('jQuery is added');
+//     }
+// }
