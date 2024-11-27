@@ -5,6 +5,7 @@ import Card from './component/Card'
 function App() {
   <>
   <h1>This is heading tag</h1>
+  <Button/>
   <Card/>
   </>
 }
