@@ -1,12 +1,14 @@
 import './App.css';
-import Module from './Module';
+// import Module from './Module';
 import Props from './Props';
+import User from './components/User';
 
 function App() {
   return (
    <>
-   <Module/>
+   {/* <Module/> */}
    <Props/>
+   <User/>
    </>
   );
 }
