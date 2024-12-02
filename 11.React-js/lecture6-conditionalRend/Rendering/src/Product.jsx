@@ -16,7 +16,7 @@ import React from 'react'
 
 const Eproduct = ({IsStock, name}) => {
   return <li>
-    {name} {IsStock && '👈'}
+    {name} {IsStock && '✅'}
   </li>
 }
 
@@ -26,7 +26,7 @@ const Product = () => {
         <h1 className='Product-heading'>Product Activity Component</h1>
         <ul className=''>
             <Eproduct name="Perfume" IsStock={true}/>
-            <Eproduct name="Skybags" IsStock={false}/>
+            <Eproduct name="Goggles" IsStock={false}/>
             <Eproduct name="Purse" IsStock={true}/>
             <Eproduct name="BookShelf" IsStock={true}/>
             <Eproduct name="Shoes" IsStock={false}/>
