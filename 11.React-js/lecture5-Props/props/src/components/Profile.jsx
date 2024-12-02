@@ -7,18 +7,18 @@ import img4 from '../assets/img4.jpg'
 
 const Profile = (props) => {
     return (
-        <div className='flex'>
+        <div className='flex' >
             <User image={img1} Name={props.Name}>
-                <a className='px-4 py-2 bg-blue-700 text-white block mt-4 text-center font-black' href="">Submit</a>
+                <a className='px-4 py-2 bg-blue-700 text-black block mt-4 text-center font-white' href="">Submit</a>
             </User>
             <User image={img2}>
-                <a className='px-4 py-2 bg-blue-700 text-white block mt-4 text-center font-black' href="">Reset</a>
+                <a className='px-4 py-2 bg-blue-700 text-black block mt-4 text-center font-black' href="">Reset</a>
             </User>
             <User image={img3}>
-                <a className='px-4 py-2 bg-blue-700 text-white block mt-4 text-center font-black' href="">Click</a>
+                <a className='px-4 py-2 bg-blue-700 text-black block mt-4 text-center font-black' href="">Click</a>
             </User>
             <User image={img4}>
-                <a className='px-4 py-2 bg-blue-700 text-white block mt-4 text-center font-black' href="">Update</a>
+                <a className='px-4 py-2 bg-blue-700 text-black block mt-4 text-center font-black' href="">Update</a>
             </User>
         </div>
     )

@@ -11,7 +11,7 @@ const User = (props) => {
   return (
     <div className='h-fit w-72 border-2 m-2'>
       <div>
-        <img src={cardImg} alt="images" />
+        <img className='h-52 w-fit object-cover' src={cardImg} alt="images" />
       </div>
       <div className='p-2'>
         <h1 className='font-black text-3xl'>Card Components With {props.Name}</h1>
