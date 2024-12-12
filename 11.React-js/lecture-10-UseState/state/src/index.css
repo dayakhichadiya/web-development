@@ -7,7 +7,11 @@
     @apply p-2 bg-blue-500 text-white text-center text-3xl
   }
 
-  .btn{
-    @apply p-2 bg-purple-500 rounded-md m-4 text-white text-center
+  .next-btn{
+    @apply p-2 bg-blue-500 rounded-md m-2 ml-[100px] mr-[300px] text-white text-center
+  }
+
+  .prev-btn{
+    @apply p-2 bg-blue-500 rounded-md m-4 ml-[800px] text-white text-center
   }
 }
