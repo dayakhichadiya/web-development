@@ -21,6 +21,7 @@ const State = () => {
 
   const nextClick = () => {
     setDirection("slide-in-from-right");
+    setName(true)
     setIndex((prevIndex) => {
       const newIndex = prevIndex + 1;
       if (newIndex >= totalItems) {
@@ -32,6 +33,8 @@ const State = () => {
 
   const prevClick = () => {
     setDirection("slide-in-from-left");
+    setName(false)
+
     if (index > 0) {
       setIndex((prevIndex) => prevIndex - 1);
     }
@@ -58,7 +61,7 @@ const State = () => {
               </a>
               <div className="p-5">
                 <a href="#">
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
                     {item.id}.{item.name}
                   </h5>
                 </a>
