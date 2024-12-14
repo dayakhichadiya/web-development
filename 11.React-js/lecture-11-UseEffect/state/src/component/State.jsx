@@ -11,17 +11,22 @@ const State = () => {
   const [index, setIndex] = useState(0);
   const [name, setName] = useState(false);
     
-  const [direction, setDirection] = useState(1)
+  const [direction, setDirection] = useState("")
 
   const toggle = () => {
     setName(!name);
   };
 
+  const handleNavigate = (step) =>{
+    setDirection(step > 0 ? "slide-in-from-left" : "slide-in-from-right");
+  }
+
   const totalItems = 10;
 
   const nextClick = () => {
-    setDirection("slide-in-from-right");
-    setName(true)
+    // setDirection("slide-in-from-right");
+    handleNavigate(-1);
+    setName(false)
     setIndex((prevIndex) => {
       const newIndex = prevIndex + 1;
       if (newIndex >= totalItems) {
@@ -32,7 +37,8 @@ const State = () => {
   };
 
   const prevClick = () => {
-    setDirection("slide-in-from-left");
+    // setDirection("slide-in-from-left");
+    handleNavigate(1);
     setName(false)
 
     if (index > 0) {
@@ -50,7 +56,8 @@ const State = () => {
       <div className="flex flex-wrap justify-around gap-y-8 mt-6">
         {List.map((item) => {
           return (
-            <div className="slide-in max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div className="slide-in max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+
               <div className={`card ${direction}`}>
               <a href="#">
                 <img
@@ -61,13 +68,13 @@ const State = () => {
               </a>
               <div className="p-5">
                 <a href="#">
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight ">
                     {item.id}.{item.name}
                   </h5>
                 </a>
                 {name && (
-                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    {item.description}
+                    <p className="mb-3 font-normal text-gray-400 dark:text-gray-400">
+                    {item.description} Family [{item.family}]
                     </p>
                 )}
                 
@@ -86,7 +93,7 @@ const State = () => {
       <button className="next-btn" onClick={prevClick}>
         Prev
       </button>
-      <button className="prev-btn" onClick={nextClick}>
+      <button className="prev-btn" onClick={nextClick} >
         Next
       </button>
     </>
