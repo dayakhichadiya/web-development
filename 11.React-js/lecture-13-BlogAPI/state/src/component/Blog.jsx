@@ -40,7 +40,7 @@ const Blog = () => {
             <div className="max-w-sm m-2 p-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-500 dark:border-gray-700">
               <a href="#">
                 <img
-                  className="rounded-t-lg h-32 mx-auto"
+                  className="rounded-t-lg h-36 mx-auto w-100 object-contain"
                   src={item.images}
                   alt=""
                 />
