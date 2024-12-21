@@ -1,0 +1,40 @@
+/* @keyframes slideInFromRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .card {
+    width: 300px;
+    background-color: white;
+    border: 1px solid #9a9292;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0.3, 0.5);
+    overflow: hidden;
+    animation-duration: 0.5s;
+  }
+  
+  .slide-in-from-right {
+    animation-name: slideInFromRight;
+  }
+  
+  .slide-in-from-left {
+    animation-name: slideInFromLeft;
+  }
+   */
