@@ -20,7 +20,7 @@ const TaskList = () => {
 
     const [taskName, setTaskName] = useState('')
     const [taskdesc, setTaskdesc] = useState('');
-    const [status, setStatus] = useState('pending');
+    const [status, setStatus] = useState('Completed');
 
     // const { tasks, setTasks } = useContext(TaskContext);
     const resetForm = () => {
@@ -39,31 +39,26 @@ const TaskList = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // addTask(prev => [...prev,{
-        //     taskName,
-        //     taskdesc,
-        //     status,
-        // }])
-
-        // setTaskName(""),
-        // setTaskdesc(""),
-        // setStatus("pending")
 
         if (!inputTitle || !inputDesc) {
             alert("Please fill in both the title and description.");
             return;
         }
 
+        const taskStatus = document.getElementById("statusSelect").value;
+
+
         const newTask = {
             id: new Date().getTime().toString(),
             name: inputTitle,
             desc: inputDesc,
+            status: taskStatus
         };
 
         setItems((prevItems) => {
             if (isEditItem) {
                 return prevItems.map((item) =>
-                    item.id === isEditItem ? { ...item, name: inputTitle, desc: inputDesc, } : item
+                    item.id === isEditItem ? { ...item, name: inputTitle, desc: inputDesc, status: taskStatus } : item
                 );
             } else {
                 return prevItems[0].id === "001" && prevItems.length === 1
@@ -82,7 +77,7 @@ const TaskList = () => {
         setInputTitle(taskToEdit.name);
         setInputDesc(taskToEdit.desc);
         setIsEditItem(id);
-        setToggleSubmit(false);
+        // setToggleSubmit(false);
         setShowForm(true);
     };
 
@@ -95,12 +90,15 @@ const TaskList = () => {
         });
     };
 
+
     const handleAdd = () => {
         setShowForm(true);
-        setshowList(true);
+        // setshowList(true);
         setShowNew(false);
         resetForm();
     };
+
+    
 
     // const handleNavigate = () => {
     //     const navigate = useNavigate();
@@ -130,7 +128,7 @@ const TaskList = () => {
                         <div className="container border d-flex justify-content-center shadow p-3 mb-5 bg-white rounded">
                             <div className="row">
                                 <div className="text-center">
-                                    <h2>{toggleSubmit ? "Add Task" : " Edit Task"}</h2>
+                                    <h2 className="text-lg font-bold">{toggleSubmit ? "Add Task" : " Edit Task"}</h2>
                                 </div>
                                 <form className="col-12 p-2" onSubmit={handleSubmit}>
                                     <label htmlFor="title" className="my-2">
@@ -157,8 +155,8 @@ const TaskList = () => {
                                         onChange={handleInputDesc}
                                         value={inputDesc}
                                     />
-                                    <label htmlFor="" >Status :</label>
-                                    <select name="" id="">
+                                    <label htmlFor="selectStatus" >Status :</label>
+                                    <select name="selectStatus" id="statusSelect">
                                         <option value="Pending">Pending</option>
                                         <option value="Completed">Completed</option>
                                     </select>
@@ -209,9 +207,12 @@ const TaskList = () => {
                                             >
                                                 Delete
                                             </button>
-                                        ) : (
+                                        ) : null (
                                             ""
                                         )}
+                                        <span className="btn btn-primary mx-2">
+                                            {elem.status === 'Completed' ? 'Completed' : 'Pending'}
+                                        </span>
                                     </div>
                                 </div>
                             );
@@ -219,7 +220,7 @@ const TaskList = () => {
                         <Link
                             to="/TaskCard"
                             state={{ tasks: items }}
-                            className="text-bold px-3 py-1 bg-blue-600 rounded-lg text-white text-lg"
+                            className="text-bold px-3 py-1 bg-blue-600 rounded-lg text-white text-lg m-4"
                         > Save List
                             {/* <button className=" text-bold px-3 py-1 bg-blue-600 rounded-lg text-white text-lg">Save List</button> */}
                         </Link>
