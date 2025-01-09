@@ -4,6 +4,9 @@ import TaskList from "./component/TaskList";
 import TaskForm from "./component/TaskForm";
 import {Route, createBrowserRouter, createRoutesFromElements, RouterProvider} from 'react-router-dom'
 import TaskCard from "./component/TaskCard";
+import { TaskProvider } from "./component/TaskContext";
+import ReactDOM from "react-dom/client"
+import React from "react";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -14,13 +17,22 @@ const router = createBrowserRouter(
     </Route>
   )
 )
+
 function App (){
   
   return ( 
     <>
-    <RouterProvider router={router}></RouterProvider>
+    <RouterProvider router={router}/>
     </>
   )
   }
+//   const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <TaskProvider>
+//       <App />
+//     </TaskProvider>
+//   </React.StrictMode>
+// )
 
 export default App;
