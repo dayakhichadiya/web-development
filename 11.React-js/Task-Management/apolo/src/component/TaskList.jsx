@@ -401,12 +401,13 @@ const TaskList = () => {
         setItems((prevItems) => {
             const updatedItems = prevItems.filter((item) => item.id !== id);
             setDeleteMessage(true);
+            setTimeout(() => setDeleteMessage(false), 2000); // Hide the delete message after 2 seconds
             return updatedItems.length === 0
                 ? [{ id: "001", name: "Empty Task", desc: "No Task Available", status: "Pending" }]
                 : updatedItems;
         });
     };
-
+    
     const handleAdd = () => {
         console.log("hande add called")
         setShowForm(true);
