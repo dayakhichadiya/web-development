@@ -93,12 +93,12 @@ const TaskList = () => {
 
     const handleAdd = () => {
         setShowForm(true);
-        // setshowList(true);
+        setshowList(true);
         setShowNew(false);
         resetForm();
     };
 
-    
+
 
     // const handleNavigate = () => {
     //     const navigate = useNavigate();
@@ -125,13 +125,13 @@ const TaskList = () => {
 
                 {showForm ? (
                     <>
-                        <div className="container border d-flex justify-content-center shadow p-3 mb-5 bg-white rounded">
-                            <div className="row">
+                        <div className="container mx-auto border d-flex justify-content-center shadow p-5 mb-5 bg-white rounded">
+                            <div className="row text-center mb-4">
                                 <div className="text-center">
-                                    <h2 className="text-lg font-bold">{toggleSubmit ? "Add Task" : " Edit Task"}</h2>
+                                    <h2 className="text-lg text-gray-700 font-bold">{toggleSubmit ? "Add Task" : " Edit Task"}</h2>
                                 </div>
                                 <form className="col-12 p-2" onSubmit={handleSubmit}>
-                                    <label htmlFor="title" className="my-2">
+                                    <label htmlFor="title" className="block text-gray-600 font-medium mb-2 ">
                                         Enter Title
                                     </label>
                                     <input
@@ -139,11 +139,11 @@ const TaskList = () => {
                                         name="title"
                                         id="title"
                                         placeholder="title"
-                                        className="w-100 my-1 p-2"
+                                        className="w-full border rounded-md p-2"
                                         onChange={handleInput}
                                         value={inputTitle}
                                     />
-                                    <label className="my-2" htmlFor="description">
+                                    <label className="block text-gray-600 font-medium mb-2" htmlFor="description">
                                         Enter description
                                     </label>
                                     <input
@@ -151,23 +151,23 @@ const TaskList = () => {
                                         name="description"
                                         id="description"
                                         placeholder="Description"
-                                        className="w-100 my-1 p-2"
+                                        className="w-full border rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                         onChange={handleInputDesc}
                                         value={inputDesc}
                                     />
-                                    <label htmlFor="selectStatus" >Status :</label>
-                                    <select name="selectStatus" id="statusSelect">
+                                    <label htmlFor="selectStatus" className="block text-gray-600 font-medium mb-2" >Status :</label>
+                                    <select className="w-full border rounded-md p-2" name="selectStatus" id="statusSelect">
                                         <option value="Pending">Pending</option>
                                         <option value="Completed">Completed</option>
                                     </select>
 
-                                    {/* <div className="text-center"> */}
-                                    {toggleSubmit ? (
-                                        <button className="btn btn-primary my-2">Save</button>
-                                    ) : (
-                                        <button className="btn btn-primary my-2">Update</button>
-                                    )}
-                                    {/* </div> */}
+                                    <div className="text-center">
+                                        {toggleSubmit ? (
+                                            <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Save</button>
+                                        ) : (
+                                            <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Update</button>
+                                        )}
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -177,46 +177,50 @@ const TaskList = () => {
                 )}
 
                 {showList ? (
-                    <div className="container py-2 ">
+                    <div className="container mx-auto py-4">
                         {deleteMessage ? (
-                            <p className="text-center text-danger">Item Deleted Successfully</p>
+                            <p className="text-center text-red-500 font-semibold mb-4">Item Deleted Successfully</p>
                         ) : (
                             ""
                         )}
                         {items.map((elem, index) => {
                             return (
                                 <div
-                                    className="row border shadow mb-3 bg-white rounded  p-2"
+                                    className="flex items-center justify-between border shadow-sm rounded-md p-4 mb-4 bg-white"
                                     key={elem.id}
                                 >
                                     <div className="col-12 d-flex justify-content-between align-items-center">
                                         <div>
-                                            <h4>{elem.name}</h4>
-                                            <p>{elem.desc}</p>
+                                            <h4 className="text-lg font-semibold text-gray-700">{elem.name}</h4>
+                                            <p className="text-gray-500">{elem.desc}</p>
                                         </div>
                                         <button
-                                            className="btn btn-primary mx-2"
+                                            className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
                                             onClick={() => handleEdit(elem.id)}
                                         >
                                             Edit
                                         </button>
                                         {showDelete ? (
                                             <button
-                                                className="btn btn-danger mx-2"
+                                                className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600"
                                                 onClick={() => handleDelete(elem.id)}
                                             >
                                                 Delete
                                             </button>
-                                        ) : null (
+                                        ) : null(
                                             ""
                                         )}
-                                        <span className="btn btn-primary mx-2">
-                                            {elem.status === 'Completed' ? 'Completed' : 'Pending'}
+                                        <span className={`px-4 py-2 rounded-md text-white ${elem.status === "Completed"
+                                                ? "bg-green-500"
+                                                : "bg-yellow-500"
+                                            }`}>
+                                             {elem.status === 'Completed' ? 'Completed' : 'Pending'}
                                         </span>
                                     </div>
                                 </div>
                             );
                         })}
+                        <div className="text-center">
                         <Link
                             to="/TaskCard"
                             state={{ tasks: items }}
@@ -224,15 +228,15 @@ const TaskList = () => {
                         > Save List
                             {/* <button className=" text-bold px-3 py-1 bg-blue-600 rounded-lg text-white text-lg">Save List</button> */}
                         </Link>
+                        </div>
                     </div>
                 ) : (
                     ""
                 )}
             </>
             <Outlet />
-        </div>
+        </div >
     );
 };
 
 export default TaskList;
-

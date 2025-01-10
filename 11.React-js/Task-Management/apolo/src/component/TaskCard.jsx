@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { TaskContext } from "./TaskContext"
+// import { TaskContext } from "./TaskContext"
+// import { useContext } from "react";
 
 const TaskCard = () => {
-    // const { tasks } = useContext(TaskContext);
+    // const { tasks, setTasks } = useContext(TaskContext);
     const location = useLocation();
     const tasks = location.state?.tasks || [];
 
