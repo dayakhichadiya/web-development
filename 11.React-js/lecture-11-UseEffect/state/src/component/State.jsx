@@ -10,44 +10,45 @@ import { AnimalList } from "./Data";
 const State = () => {
   const [index, setIndex] = useState(0);
   const [name, setName] = useState(false);
-    
-  const [direction, setDirection] = useState("")
+
+  // const [add, setAdd] = useState(false)
+  const [animate, setAnimate] = useState('slideleft')
 
   const toggle = () => {
     setName(!name);
   };
 
-  const handleNavigate = (step) =>{
-    setDirection(step > 0 ? "slide-in-from-left" : "slide-in-from-right");
-  }
-
-  const totalItems = 10;
 
   const nextClick = () => {
-    // setDirection("slide-in-from-right");
-    handleNavigate(-1);
-    setName(false)
-    setIndex((prevIndex) => {
-      const newIndex = prevIndex + 1;
-      if (newIndex >= totalItems) {
-        return 0;
-      }
-      return newIndex;
-    });
+
+    if (index < AnimalList.length - 1) {
+      setAnimate('slideright')
+      setIndex(index + 1)
+      setName(false)
+    }
+    else {
+      setIndex(0)
+    }
+    // setAdd(true)
+    setTimeout(() => {
+      // setAdd(false)
+    }, 1000)
   };
 
+
   const prevClick = () => {
-    // setDirection("slide-in-from-left");
-    handleNavigate(1);
     setName(false)
 
     if (index > 0) {
-      setIndex((prevIndex) => prevIndex - 1);
+      setAnimate('slideleft')
+      setIndex(index - 1)
     }
-  };
-
+    else {
+      setIndex(AnimalList.length - 1);
+    };
+  }
   let List = [AnimalList[index]];
-  console.log(List);
+  // console.log(List);
 
   return (
     <>
@@ -56,34 +57,34 @@ const State = () => {
       <div className="flex flex-wrap justify-around gap-y-8 mt-6">
         {List.map((item) => {
           return (
-            <div className="slide-in max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+            <div key={item.id} className={`${animate === "slideright" ? "animate-slideright" : "animate-slideleft"} max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700`}>
 
-              <div className={`card ${direction}`}>
-              <a href="#">
-                <img
-                  className="rounded-t-lg h-52 w-full object-cover object-top"
-                  src={item.image}
-                  alt=""
-                />
-              </a>
-              <div className="p-5">
+              <div>
                 <a href="#">
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight ">
-                    {item.id}.{item.name}
-                  </h5>
+                  <img
+                    className="rounded-t-lg h-52 w-full object-cover object-top"
+                    src={item.image}
+                    alt=""
+                  />
                 </a>
-                {name && (
+                <div className="p-5">
+                  <a href="#">
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight ">
+                      {item.id}.{item.name}
+                    </h5>
+                  </a>
+                  {name && (
                     <p className="mb-3 font-normal text-gray-400 dark:text-gray-400">
-                    {item.description} Family [{item.family}]
+                      {item.description} Family [{item.family}]
                     </p>
-                )}
-                
-                <button
-                  onClick={toggle}
-                  className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  )}
+
+                  <button
+                    onClick={toggle}
+                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
-                  {name ? "Read Less" : "Read More"}
-                </button>
+                    {name ? "Read Less" : "Read More"}
+                  </button>
                 </div>
               </div>
             </div>
@@ -93,7 +94,7 @@ const State = () => {
       <button className="next-btn" onClick={prevClick}>
         Prev
       </button>
-      <button className="prev-btn" onClick={nextClick} >
+      <button className="prev-btn" onClick={nextClick}>
         Next
       </button>
     </>

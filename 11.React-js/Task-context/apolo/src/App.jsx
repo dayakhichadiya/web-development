@@ -20,13 +20,13 @@ const App = () => {
   return (
     <>
       {/* <UseRefExample/> */}
-      {/* <ImageScroll/> */}
+      <ImageScroll/>
       {/* <VideoPlayer/> */}
       {/* <ExposeRefExample/> */}
       {/* <ClickCounter/> */}
       {/* <Stopwatch/> */}
 
-      <Router>
+      {/* <Router>
         
           <Navbar/>
           <Routes>
@@ -36,7 +36,7 @@ const App = () => {
             <Route path="/productview" element= {<ProductsProvider> <ProductView /> </ProductsProvider>} />
           </Routes>
         
-      </Router>
+      </Router> */}
     </>
   )
 }
