@@ -1,0 +1,29 @@
+.app {
+    padding: 20px;
+    transition: background 0.3s;
+  }
+
+.app.light {
+    background-color: white;
+    color: black;
+    width: full;
+    height: max-content;
+  }
+  
+  .app.dark {
+    background-color: black;
+    color: white;
+    width: 100;
+    height: max-content;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+  }
+  

@@ -1,13 +1,13 @@
 import React from 'react'
 import {createStore} from 'redux'
 import { useDispatch, useSelector } from 'react-redux'
+import { buy } from './Action'
 
-
-const buy = () => {
-    return{
-        type : 'BUY_ITEM_1'
-    }
-}
+// const buy = () => {
+//     return{
+//         type : 'BUY_ITEM_1'
+//     }
+// }
 
 // const initialState = 10
 
@@ -22,18 +22,18 @@ const buy = () => {
 const Redux = () => {
 
     const data = useSelector(state => state)
-    console.log('data', data);
 
     const dispatch = useDispatch()
 
   return (
     <>
     <div className='heading'>React-Redux Component</div>
+    <p>Count : {data}</p>
     <button className='btn' onClick={() => dispatch(buy())}>click here</button>
     </>
   )
 }
 
-export default Redux
+export default Redux;
 
-export const store = createStore(reducer)
+// export const store = createStore(reducer)
