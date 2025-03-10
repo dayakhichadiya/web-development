@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+.product-card, .cart-item {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+  }
+  
+  .product-card img, .cart-item img {
+    max-width: 50%;
+    height: 6;
+  }
+  
+  .product-list, .cart-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  

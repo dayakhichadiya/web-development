@@ -1,11 +1,12 @@
-
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
+
+    const navigate = useNavigate(); // React Router navigation hook
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -14,6 +15,7 @@ const LoginPage = () => {
         } else {
             setError("");
             alert("Login successful");
+            navigate("/dashboard"); 
         }
     };
 
@@ -47,19 +49,21 @@ const LoginPage = () => {
                         />
                     </div>
 
-                    <Link to="/Navbar">
-                        <input
-                            type="submit"
-                            value="Login"
-                            className="w-full bg-blue-500 text-white p-2 rounded mt-2 cursor-pointer hover:bg-blue-600"
-                        />
-                    </Link>
+                    <button
+                        type="submit"
+                        className="w-full bg-blue-500 text-white p-2 rounded mt-2 cursor-pointer hover:bg-blue-600"
+                    >
+                        Login
+                    </button>
                 </form>
 
-                <p className="text-center text-gray-600 mt-4">Don't have an account? <a href="#" className="text-blue-500">Sign up</a></p>
+                <p className="text-center text-gray-600 mt-4">
+                    Don't have an account?{" "}
+                    <Link to="/addcard" className="text-blue-500 hover:underline">Sign up</Link>
+                </p>
             </div>
         </div>
     );
-}
+};
 
 export default LoginPage;

@@ -55,12 +55,3 @@ const Login = ({ onLogin }) => {
 };
 
 export default Login;
-
-        // <Link to="TaskInput">
-        // <button
-        //   onClick={handleLogin}
-        //   className="w-full p-2 bg-blue-500 text-white rounded"
-        //   >
-        //   Login
-        // </button>
-        // </Link>

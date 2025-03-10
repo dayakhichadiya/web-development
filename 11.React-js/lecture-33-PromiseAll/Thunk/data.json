@@ -1,0 +1,37 @@
+{
+  "profile": [
+    {
+      "name": "Laptop",
+      "price": 40000,
+      "description": "Laptop images can be found on websites like Unsplash, iStock, and Shutterstock.",
+      "img": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXBwbGUlMjBsYXB0b3B8ZW58MHx8MHx8fDA%3D"
+    },
+    {
+      "id": "03a0",
+      "name": "HeadPhones",
+      "price": 2000,
+      "description": "Headphones with good imaging can accurately portray the left and right placement of sound.",
+      "img": "https://5.imimg.com/data5/ECOM/Default/2023/2/WS/NA/BD/184296523/c567ffdaeec750e35668856c09774c84-a6e7c6cd-69df-4b69-9b7f-f98199276106.jpg"
+    },
+    {
+      "name": "Camera",
+      "price": 5300,
+      "description": "A camera is an instrument used to capture and store images and videos, either digitally via an electronic image sensor",
+      "img": "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?cs=srgb&dl=pexels-madebymath-90946.jpg&fm=jpg"
+    },
+    {
+      "name": "Brand Cosmetics",
+      "price": 1540,
+      "description": "A product brand cosmetics refers to a specific line of beauty products, like lipstick, foundation, mascara, or skincare items.",
+      "img": "https://png.pngtree.com/png-clipart/20210606/original/pngtree-3d-beauty-cosmetics-product-design-png-image_6391024.jpg"
+    },
+    {
+        "name": "Makeup Brushes",
+        "price": 3390,
+        "description": "Makeup brushes come in different shapes and sizes, and are used for applying various types of makeup.",
+        "img": "https://media.istockphoto.com/id/1414801672/photo/cardboard-box-with-cosmetics-product-in-front-od-open-door-buying-online-and-delivery.jpg?s=612x612&w=0&k=20&c=SA9VCzp-QtpzlliX8dM_uoH8K20U1gHqYfsWP08aLl0="
+    }
+
+
+  ]
+}

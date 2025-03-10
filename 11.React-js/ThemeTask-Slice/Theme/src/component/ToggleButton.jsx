@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { toggleTheme } from "../Redux/themeSlice";
 
 const ToggleButton = () => {
-  const theme = useSelector((state) => state.theme?.mode || "light"); // ✅ Safe access
+  const theme = useSelector((state) => state.theme.mode); 
   const dispatch = useDispatch();
 
   return (
